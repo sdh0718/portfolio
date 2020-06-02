@@ -1,0 +1,15 @@
+@charset 'utf-8';
+
+#welcome{background-color: #F2C49B;}
+#welcome{position: relative; overflow: hidden;}
+#welcome video{position: absolute; left: 0; top: -20px; z-index: 8;
+    width: 1912px; height: 120%;}
+
+.btn_box{position: absolute; top: 80vh; width: 100%; left: 45%; z-index: 9;}
+.btn_box input{padding: 10px 20px; background-color: transparent; font-size: 1.5em; cursor: pointer;
+    border: 2px solid white; border-radius: 10px; color: white; margin-right: 10px;}
+.btn_box input:hover{background-color: white;color: black;}
+
+@media (max-width:800px){
+    .btn_box{left: 30%;}
+    }

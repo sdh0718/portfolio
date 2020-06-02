@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 포트폴리오</title>
+<!-- 제이쿼리 -->
+    <script src="js/jquery-3.5.0.js"></script>
+<!-- 스와이퍼 -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/swiper.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+<!-- 외부 js파일 -->
+    <script src="js/header.js"></script>
+<!-- 외부 css파일 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/skip_menu.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/i_am.css">
+    <link rel="stylesheet" href="css/skill.css">
+
+    <script>
+    $(function(){
+        $('.skip_menu>li>a').focus(function(){
+            $(this).parent().css('top',0);
+        });
+        $('.skip_menu>li>a').focusout(function(){
+            $(this).parent().css('top','-100%');
+        });
+
+        var mySwiper = new Swiper('.swiper-container', {
+            speed: 400,
+            loop:true,
+            spaceBetween:20,
+            slidesPerView:2.5,
+        });
+
+        
+    })
+    </script>
+
+    <style>
+
+        
+
+        #portfolio{background-color: #BF826B;}
+        #tel{background-color: #735149;}
+        #portfolio .content{width:95%;max-width: 1920px;}
+        #portfolio h2{font-size: 50px; color: white; text-align: center;padding-bottom: 100px;}
+        .swiper-slide{text-align: center;}
+        .swiper-slide img{width: 100%; overflow: hidden;}
+        .swiper-slide a{font-size: 2em; color: white;}
+        .swiper-slide a:hover{color: darkred;}
+
+    </style>
+
+</head>
+<body>
+    <ul class="skip_menu">
+        <li><a href="#welcome">어서오세요</a></li>
+        <li><a href="#i_am">나는 누구인가?</a></li>
+        <li><a href="#skill">기술</a></li>
+        <li><a href="#portfolio">작품집</a></li>
+        <li><a href="#tel">연락주세요</a></li>
+    </ul>
+    <div class="wrap">
+        <header class="header">
+            <div class="content">
+                <div class="logo">
+                    <h1><a href="index.html">PORTFOLIO</a></h1>
+                </div>
+                <nav class="nav">
+                    <p id="open_nav_btn">&#x2630;</p>
+                    <ul>
+                        <li id="close_nav_btn">&#x2715;</li>  
+                        <li><a href="#welcome">Welcome</a></li>
+                        <li><a href="#i_am">About me</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#tel">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="section" id="welcome">
+            <div class="content">
+                <video autoplay loop muted>
+                    <source src="media/movie05.mp4">
+                </video>
+                <div class="btn_box">
+                    <a href="#portfolio">
+                        <input type="button" value="portfolio">
+                    </a>
+                    <a href="https://github.com/sdh0718" target="_blank">
+                        <input type="button" value="github">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="i_am">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>안녕하세요. 잘 부탁 드립니다.</p>
+                <ul class="about_list">
+                    <li>
+                        <div class="img_box">
+                            <p>$</p>
+                        </div>
+                        <h3>아이고난1</h3>
+                        <p>아이고난1</p>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <p>#</p> 
+                        </div>
+                        <h3>아이고난2</h3>
+                        <p>아이고난2</p>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <p>@</p> 
+                        </div>
+                        <h3>아이고난3</h3>
+                        <p>아이고난3</p>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <p>!</p>
+                        </div>
+                        <h3>아이고난4</h3>
+                        <p>아이고난4</p>
+                    </li>
+
+                </ul>
+            </div>          
+        </section>
+        <section class="section" id="skill">
+            <div class="content">
+                <h2>My Skill</h2>
+                <p>안녕하세요. 잘 부탁 드립니다.</p>
+                <ul class="about_list">
+                    <li>
+                        <div class="img_box">
+                            <img src="images/img01.jpg" alt="image01">
+                        </div>
+                        <h3>JQUERY</h3>
+                        <p>제이쿼리</p>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="images/img02.jpg" alt="image02">
+                        </div>
+                        <h3>HTML</h3>
+                        <p>html</p>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="images/img03.jpg" alt="image03">
+                        </div>
+                        <h3>PHOTOSHOP</h3>
+                        <p>포토샵</p>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="images/img04.jpg" alt="image04">
+                        </div>
+                        <h3>ILLUSTRATOR</h3>
+                        <p>일러스트레이터</p>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="images/img05.jpg" alt="image05">
+                        </div>
+                        <h3>UI/UX</h3>
+                        <p>반응형 웹페이지</p>
+                    </li>
+                </ul>
+            </div>       
+        </section>
+        <section class="section" id="portfolio">
+            <div class="content">
+                <h2>PORTFOLIO</h2>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"> 
+                            <a href="https://sdh0718.github.io/megabox">
+                                <img src="images/megabox-mockup.png" alt="메가박스">
+                            </a>
+                            <a href="https://sdh0718.github.io/megabox/pc_web.html">
+                                메가박스 pc
+                            </a>
+                            <a href="#">|</a>
+                            <a href="https://sdh0718.github.io/megabox/mo/mo_web.html">
+                                메가박스 모바일
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                                <a href="https://sdh0718.github.io/kia/">
+                                    <img src="images/kia-mockup.png" alt="기아">
+                                    KIA 반응형
+                                </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://sdh0718.github.io/iwc/">
+                                <img src="images/iwc-mockup.png" alt="iwc">
+                                iwc 반응형
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=" https://sdh0718.github.io/tour/">
+                                <img src="images/tour-mockup.png" alt="tour">
+                                Tourist in tour 반응형
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://sdh0718.github.io/indigo/">
+                                <img src="images/indigo-mockup.png" alt="인디고">
+                                INDIGO 반응형
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://sdh0718.github.io/hansol-responsive/">
+                                <img src="images/hansol-mockup.png" alt="한솔">
+                            </a>
+                            <a href="https://sdh0718.github.io/hansol-no-responsive/">
+                                한솔제지 pc
+                            </a>
+                            <a href="#">|</a>
+                            <a href="https://sdh0718.github.io/hansol-responsive/">
+                                한솔제지 반응형
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://sdh0718.github.io/hollyscoffee/">
+                                <img src="images/hollys-mockup.png" alt="할리스커피">
+                                할리스커피
+                            </a> 
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://sdh0718.github.io/selective/">
+                                <img src="images/selective-mockup.png" alt="셀렉티브">
+                                셀렉티브
+                            </a> 
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://sdh0718.github.io/line/">
+                                <img src="images/line-mockup.png" alt="라인">
+                                라인
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="tel">
+            <div class="content">
+                <p class="temp">tel</p> 
+            </div>             
+        </section>
+    </div>
+</body>
+</html>

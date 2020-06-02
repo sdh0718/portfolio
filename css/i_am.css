@@ -1,0 +1,12 @@
+@charset 'utf-8';
+
+
+#i_am{background-color: #D9A282;}
+#i_am{text-align: center;}
+#i_am h2{font-size: 2.8em;}
+#i_am h3{font-size: 1.8em;}
+#i_am p{font-size: 1.3em;}
+.about_list{display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;}
+.img_box{display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;width: 100%;}
+.img_box p{width: 220px; height: 200px; border-radius: 50%;line-height: 200px; color: white;background-color: lightblue;}
+#i_am .img_box p{font-size: 3.0em;}

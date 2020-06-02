@@ -1,0 +1,5 @@
+@charset 'utf-8';
+
+body{font-family: 'Noto Serif KR', serif;}
+body::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera*/}
+.content{width: 90%;max-width: 1100px;margin: 0 auto;}
