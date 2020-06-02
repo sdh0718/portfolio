@@ -5,6 +5,7 @@
 #skill h2{font-size: 2.8em;}
 #skill h3{font-size: 1.8em;}
 #skill p{font-size: 1.3em;}
-.about_list{display: flex; flex-flow: row nowrap;}
-.img_box{width: 90%; overflow: hidden;padding: 50px 0;}
-.img_box img{width: 100%; height: 100%; border-radius: 50%;}
+#skill .about_list{display: flex; flex-flow: row nowrap;}
+#skill .about_list li{display: flex; flex-flow: column nowrap; width: 20%;}
+#skill .img_box{overflow: hidden;}
+#skill .img_box img{width: 100%; height: 100%; border-radius: 50%;}
