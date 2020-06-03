@@ -2,4 +2,5 @@
 
 body{font-family: 'Noto Serif KR', serif;}
 body::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera*/}
-.content{width: 90%;max-width: 1100px;margin: 0 auto;}
+.content{width: 90%;max-width: 1350px;margin: 0 auto;}
+.section{box-sizing: border-box;padding-top: 80px;width: 100vw; height: 100vh;}

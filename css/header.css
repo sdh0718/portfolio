@@ -7,18 +7,18 @@
 .nav>ul{display:flex;}
 .nav>ul>li>a{padding:0 16px;font-weight:bold;font-size:16px;}
 .header a{color: white;}
-.header a:hover{color: #BF826B;}
+.nav a:hover{color: gray; }
 #open_nav_btn{font-size:32px;cursor:pointer;display:none;color: white;}
 #close_nav_btn{text-align:right;font-size:32px;color:white;cursor:pointer;display:none;}
       
   
   
 
-@media (max-width:767px){
+@media (max-width:800px){
     .header>.content::before{content:'';display:block;}
-    #close_nav_btn{display:block;    }
+    #close_nav_btn{display:block;}
     .nav>ul{position:fixed;right:0;top:0;z-index:11;width:35%;height:100%;padding:9px 5%;background:black;}
     .nav>ul>li{padding:10px 0;}
     .nav>ul>li a{color:white;padding:10px 0 2px;}
-  }
+}
 

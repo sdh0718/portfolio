@@ -22,7 +22,7 @@ $(function(){
     //start 네비게이션변환함수
     function navMenu(){
       var winWidth=$(window).width();
-      if(winWidth>=768){
+      if(winWidth>=801){
         $('.nav>ul').css('display','flex');
         $('#open_nav_btn').css('display','none');
       }else{
