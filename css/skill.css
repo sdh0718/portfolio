@@ -1,9 +1,10 @@
 @charset 'utf-8';
 
-#skill{background-color: #DA9378;}
+
 #skill{text-align: center;}
+#skill{background: url(../images/bg01.jpg);}
 #skill h2{font-size: 2.8em;}
-#skill h3{font-size: 1.8em;}
+#skill h3{font-size: 1.5em;}
 #skill p{font-size: 1.3em;}
 #skill .about_list{display: flex; flex-flow: row nowrap;}
 #skill .about_list li{display: flex; flex-flow: column nowrap; width: 20%;}

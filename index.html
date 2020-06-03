@@ -11,9 +11,15 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <script src="js/swiper.js"></script>
     <script src="js/swiper.min.js"></script>
+<!-- 풀페이지 -->
+    <link rel="stylesheet" href="css/fullpage.css">
+    <script src="js/fullpage.js"></script>
 
 <!-- 외부 js파일 -->
+    <script src="js/script_fullpage.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/skip_menu.js"></script>
+    <script src="js/script_swiper.js"></script>
 <!-- 외부 css파일 -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
@@ -23,75 +29,56 @@
     <link rel="stylesheet" href="css/welcome.css">
     <link rel="stylesheet" href="css/i_am.css">
     <link rel="stylesheet" href="css/skill.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/tel.css">
 
     <script>
     $(function(){
-        $('.skip_menu>li>a').focus(function(){
-            $(this).parent().css('top',0);
-        });
-        $('.skip_menu>li>a').focusout(function(){
-            $(this).parent().css('top','-100%');
-        });
 
-        var mySwiper = new Swiper('.swiper-container', {
-            speed: 400,
-            loop:true,
-            spaceBetween:20,
-            slidesPerView:2.5,
-        });
-
-        
     })
     </script>
 
     <style>
-
-        
-
-        #portfolio{background-color: #BF826B;}
-        #tel{background-color: #735149;}
-        #portfolio .content{width:95%;max-width: 1920px;}
-        #portfolio h2{font-size: 50px; color: white; text-align: center;padding-bottom: 100px;}
-        .swiper-slide{text-align: center;}
-        .swiper-slide img{width: 100%; overflow: hidden;}
-        .swiper-slide a{font-size: 2em; color: white;}
-        .swiper-slide a:hover{color: darkred;}
-
+        .section{background-color: darksalmon;}
     </style>
 
 </head>
 <body>
-    <ul class="skip_menu">
-        <li><a href="#welcome">어서오세요</a></li>
-        <li><a href="#i_am">나는 누구인가?</a></li>
-        <li><a href="#skill">기술</a></li>
-        <li><a href="#portfolio">작품집</a></li>
-        <li><a href="#tel">연락주세요</a></li>
-    </ul>
-    <div class="wrap">
-        <header class="header">
-            <div class="content">
-                <div class="logo">
-                    <h1><a href="index.html">PORTFOLIO</a></h1>
-                </div>
-                <nav class="nav">
-                    <p id="open_nav_btn">&#x2630;</p>
-                    <ul>
-                        <li id="close_nav_btn">&#x2715;</li>  
-                        <li><a href="#welcome">Welcome</a></li>
-                        <li><a href="#i_am">About me</a></li>
-                        <li><a href="#skill">Skill</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#tel">Contact</a></li>
-                    </ul>
-                </nav>
+<ul class="skip_menu">
+    <li><a href="#welcome">어서오세요</a></li>
+    <li><a href="#i_am">나는 누구인가?</a></li>
+    <li><a href="#skill">기술</a></li>
+    <li><a href="#portfolio">작품집</a></li>
+    <li><a href="#tel">연락주세요</a></li>
+</ul>
+<div class="wrap">
+    <header class="header">
+        <div class="content">
+            <div class="logo">
+                <h1><a href="index.html">PORTFOLIO</a></h1>
             </div>
-        </header>
+            <nav class="nav">
+                <p id="open_nav_btn">&#x2630;</p>
+                <ul>
+                    <li id="close_nav_btn">&#x2715;</li>  
+                    <li><a href="#welcome">Welcome</a></li>
+                    <li><a href="#i_am">About me</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#tel">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="fullpage">
         <section class="section" id="welcome">
             <div class="content">
-                <video autoplay loop muted>
+                <video id="myVideo" loop muted data-autoplay>
                     <source src="media/movie05.mp4">
                 </video>
+                <div class="welcome_h2">
+                    <h2>안녕하세요.</h2>
+                </div>
                 <div class="btn_box">
                     <a href="#portfolio">
                         <input type="button" value="portfolio">
@@ -109,33 +96,14 @@
                 <ul class="about_list">
                     <li>
                         <div class="img_box">
-                            <p>$</p>
+                            <img src="images/img03.jpg" alt="a">
                         </div>
-                        <h3>아이고난1</h3>
-                        <p>아이고난1</p>
-                    </li>
-                    <li>
-                        <div class="img_box">
-                            <p>#</p> 
+                        <div class="txt_box">
+                            <h3>이름</h3>
+                            <p>나이</p>
+                            <p>이메일</p>
                         </div>
-                        <h3>아이고난2</h3>
-                        <p>아이고난2</p>
                     </li>
-                    <li>
-                        <div class="img_box">
-                            <p>@</p> 
-                        </div>
-                        <h3>아이고난3</h3>
-                        <p>아이고난3</p>
-                    </li>
-                    <li>
-                        <div class="img_box">
-                            <p>!</p>
-                        </div>
-                        <h3>아이고난4</h3>
-                        <p>아이고난4</p>
-                    </li>
-
                 </ul>
             </div>          
         </section>
@@ -155,8 +123,8 @@
                         <div class="img_box">
                             <img src="images/img02.jpg" alt="image02">
                         </div>
-                        <h3>HTML</h3>
-                        <p>html</p>
+                        <h3>JAVASCRIPT</h3>
+                        <p>자바스크립트</p>
                     </li>
                     <li>
                         <div class="img_box">
@@ -183,75 +151,102 @@
             </div>       
         </section>
         <section class="section" id="portfolio">
+            <h2>PORTFOLIO</h2>
             <div class="content">
-                <h2>PORTFOLIO</h2>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"> 
                             <a href="https://sdh0718.github.io/megabox">
                                 <img src="images/megabox-mockup.png" alt="메가박스">
                             </a>
-                            <a href="https://sdh0718.github.io/megabox/pc_web.html">
-                                메가박스 pc
-                            </a>
-                            <a href="#">|</a>
-                            <a href="https://sdh0718.github.io/megabox/mo/mo_web.html">
-                                메가박스 모바일
-                            </a>
+                            <br>
+                            <p>
+                                <a href="https://sdh0718.github.io/megabox/pc_web.html">메가박스 pc</a>
+                            </p>
+                            <p>|</p>
+                            <p>
+                                <a href="https://sdh0718.github.io/megabox/mo/mo_web.html">메가박스 모바일</a>
+                            </p>
+                            <br>
+                            <p>CSS / JAVASCRIPT/ JQUERY / HTML</p>
                         </div>
                         <div class="swiper-slide">
-                                <a href="https://sdh0718.github.io/kia/">
-                                    <img src="images/kia-mockup.png" alt="기아">
-                                    KIA 반응형
-                                </a>
+                            <a href="https://sdh0718.github.io/kia/">
+                                <img src="images/kia-mockup.png" alt="기아">
+                            </a>
+                            <br>
+                            <p>KIA 반응형</p>
+                            <br>
+                            <p>CSS / JAVASCRIPT/ JQUERY / HTML</p>
                         </div>
                         <div class="swiper-slide">
                             <a href="https://sdh0718.github.io/iwc/">
                                 <img src="images/iwc-mockup.png" alt="iwc">
-                                iwc 반응형
                             </a>
+                            <br>
+                            <p>iwc 반응형</p>
+                            <br>
+                            <p>CSS / JAVASCRIPT/ JQUERY / HTML</p>
                         </div>
                         <div class="swiper-slide">
                             <a href=" https://sdh0718.github.io/tour/">
                                 <img src="images/tour-mockup.png" alt="tour">
-                                Tourist in tour 반응형
                             </a>
+                            <br>
+                            <p>Tourist in tour 반응형</p>
+                            <br>
+                            <p>CSS / JAVASCRIPT/ JQUERY / HTML</p>
                         </div>
                         <div class="swiper-slide">
                             <a href="https://sdh0718.github.io/indigo/">
                                 <img src="images/indigo-mockup.png" alt="인디고">
-                                INDIGO 반응형
                             </a>
+                            <br>
+                            <p>INDIGO 반응형</p>
+                            <br>
+                            <p>CSS / JAVASCRIPT/ JQUERY / HTML</p>
                         </div>
                         <div class="swiper-slide">
                             <a href="https://sdh0718.github.io/hansol-responsive/">
                                 <img src="images/hansol-mockup.png" alt="한솔">
                             </a>
-                            <a href="https://sdh0718.github.io/hansol-no-responsive/">
-                                한솔제지 pc
-                            </a>
-                            <a href="#">|</a>
-                            <a href="https://sdh0718.github.io/hansol-responsive/">
-                                한솔제지 반응형
-                            </a>
+                            <br>
+                            <p>
+                                <a href="https://sdh0718.github.io/hansol-no-responsive/">한솔제지 pc</a>
+                            </p>
+                            <p>|</p>
+                            <p>
+                                <a href="https://sdh0718.github.io/hansol-responsive/">한솔제지 반응형</a>
+                            </p>
+                            <br>
+                            <p>CSS / JAVASCRIPT/ JQUERY / HTML</p>
                         </div>
                         <div class="swiper-slide">
                             <a href="https://sdh0718.github.io/hollyscoffee/">
                                 <img src="images/hollys-mockup.png" alt="할리스커피">
-                                할리스커피
-                            </a> 
+                            </a>
+                            <br>
+                            <p>할리스커피</p>
+                            <br>
+                            <p>CSS / HTML</p>
                         </div>
                         <div class="swiper-slide">
                             <a href="https://sdh0718.github.io/selective/">
                                 <img src="images/selective-mockup.png" alt="셀렉티브">
-                                셀렉티브
                             </a> 
+                            <br>
+                            <p>셀렉티브</p>
+                            <br>
+                            <p>CSS / JAVASCRIPT/ JQUERY / HTML</p>
                         </div>
                         <div class="swiper-slide">
                             <a href="https://sdh0718.github.io/line/">
                                 <img src="images/line-mockup.png" alt="라인">
-                                라인
                             </a> 
+                            <br>
+                            <p>라인</p>
+                            <br>
+                            <p>CSS / HTML</p>
                         </div>
                     </div>
                 </div>
@@ -263,5 +258,7 @@
             </div>             
         </section>
     </div>
+</div>
+
 </body>
 </html>
