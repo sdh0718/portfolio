@@ -4,3 +4,16 @@ body{font-family: 'Noto Serif KR', serif;}
 body::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera*/}
 .content{width: 90%;max-width: 1350px;margin: 0 auto;}
 .section{box-sizing: border-box;padding-top: 80px;width: 100vw; height: 100vh;}
+
+#i_am{background-color: #0C3A5E;}
+#skill{background-color: #8DEDF2;}
+#portfolio{background-color: midnightblue;}
+#tel{background-color: #37A097;}
+
+
+#i_am{background: url(../images/bg03.jpg) no-repeat; background-size: cover;}
+#skill{background: url(../images/bg05.jpg) no-repeat; background-size: cover;}
+#portfolio{background: url(../images/bg04.png) no-repeat; background-size: cover;}
+#tel{background-image: url(../images/bg02.png); background-size: cover;}
+
+.fp-tableCell{display: table;}

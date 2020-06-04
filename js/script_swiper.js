@@ -9,7 +9,15 @@ $(function(){
                 spaceBetween:20,
                 slidesPerView:2.5,
             }
-        }
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     });
 
 
