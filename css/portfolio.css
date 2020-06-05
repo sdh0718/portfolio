@@ -2,7 +2,7 @@
 
 #portfolio{padding-top: 80px;}
 #portfolio .content{width:90%;}
-#portfolio h2{font-size: 50px; color: white;padding: 10vh;text-shadow: 10px 10px 5px black;}
+#portfolio h2{font-size: 50px; color: white;padding: 8vh;text-shadow: 8px 8px 5px black;}
 .swiper-container{padding-bottom: 80px; padding-top: 0;}
 .swiper-slide{overflow: hidden; text-align: center;}
 .swiper-slide:hover img{transform:scale(1.05);}
