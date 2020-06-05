@@ -2,7 +2,7 @@
 
 
 #i_am{text-align: center;}
-#i_am .content{padding-top: 100px;}
+#i_am .content{padding-top: 20vh;}
 #i_am h2{font-size: 4.0em; text-shadow: 10px 10px 5px black;}
 #i_am .content>p{font-weight: bold; font-size: 2.0em; text-shadow: 5px 5px 5px black;}
 #i_am h3{font-size: 1.8em; padding-bottom: 10px;}
@@ -16,7 +16,7 @@
 #i_am .img_box::after{content: '';width: 100%; height: 100%; background-color: rgba(0,0,0,0.6);
     position: absolute;top: 0; left: 0; z-index: 10;display: none;border-radius: 50%;}
 #i_am .img_box:hover::after{display: block;}
-#i_am .txt_box{position: absolute; top: -80px; left: 0; transform: translateY(50%);
+#i_am .txt_box{position: absolute; top: -100px; left: 0; transform: translateY(50%);
     width: 100%; height: 100%;display: none; z-index: 11;text-shadow: 5px 5px 5px black;}
 #i_am .about_list li:hover .txt_box{display: block;}
 

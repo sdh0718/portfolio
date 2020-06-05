@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-#portfolio .content{width:90%;max-width: 1920px;}
+#portfolio .content{width:90%;}
 #portfolio h2{font-size: 50px; color: white;padding: 10vh;}
 .swiper-container{padding-bottom: 80px; padding-top: 0;}
 .swiper-slide{overflow: hidden; text-align: center;}
