@@ -49,6 +49,6 @@
 }
 
 @media (max-width:450px){
-    #skill .about_list{padding-top: 50px;}
-    #skill h2{display: none;}
+    #skill h2{font-size: 2.0em; padding-top: 30px;}
+
 }

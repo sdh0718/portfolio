@@ -26,16 +26,17 @@
 }
 
 @media (max-width:800px){
-    .footer_txt{display: none;}
     .tel_bg{height: 50vh; padding: 50px 20px;}
     .tel_bg p{font-size: 1.5em;}
     .tel_bg li:nth-child(1){width: 40%;}
     .tel_bg li:nth-child(2){width: 60%;}
     .tel_bg li iframe{display: none;}
     .footer .footer_address{display: none;}
+    .footer .footer_img{left: 15%;}
 }
 
 @media (max-width:600px){
     .tel_bg h2{color: black;font-size: 2.0em;}
     .tel_bg p{font-size: 1.2em;}
+    .footer .footer_img{left: 25%;}
 }

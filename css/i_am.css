@@ -36,7 +36,7 @@
     #i_am p{font-size: 0.8em;}
 }
 @media (max-width:450px){
-    #i_am h2{display: none;}
+    #i_am h2{font-size: 2.0em;}
     #i_am .about_list{flex-flow:column nowrap;}
     #i_am .img_box{width: 150px; height: 150px;}
 }
