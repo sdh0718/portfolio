@@ -1,5 +1,6 @@
 @charset 'utf-8';
 
+#portfolio{padding-top: 80px;}
 #portfolio .content{width:90%;}
 #portfolio h2{font-size: 50px; color: white;padding: 10vh;}
 .swiper-container{padding-bottom: 80px; padding-top: 0;}
@@ -21,8 +22,14 @@
 @media (max-width:800px){    
     #portfolio .content{width:95%;}
     #portfolio h2{padding-left: 50px;}
-    .swiper-slide{text-align: left;}
-    .swiper-slide img{width:30%;}
+    .swiper-container{padding-bottom: 0px;width: 100vw}
+    .swiper-slide img{width:80%;}
     .swiper-pagination{display: none;}
     .swiper-button-next:after, .swiper-button-prev:after{display: none;}
+}
+@media (max-width:450px){
+    #portfolio h2{padding:0;padding-top:50px;font-size: 30px; text-align: center;}
+    .swiper-container{padding-top: 20px;}
+    .swiper-slide p{font-size: 1.5em;}
+    .swiper-slide p:last-of-type{font-size: 1.2em;}
 }
