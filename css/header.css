@@ -1,17 +1,18 @@
 @charset 'utf-8';
 
 /* header style */
-.header{position:fixed;left:0;top:0;z-index:10;width:100%;height:80px;background-color:transparent;}
+.header{position:fixed;left:0;top:0;z-index:10;width:100%;height:80px;background-color:transparent; transition: 0.3s;}
 .header:hover{background-color: rgba(0,0,0,0.7);}
 .header>.content{display:flex;justify-content:space-between;align-items:center;height:inherit;}
 .nav>ul{display:flex;}
 .nav>ul>li>a{padding:0 16px;font-weight:bold;font-size:16px;}
 .header a{color: white;}
-.nav a:hover{color: gray; }
+.nav a:hover{color: lightcoral; }
 #open_nav_btn{font-size:32px;cursor:pointer;display:none;color: white;}
 #close_nav_btn{text-align:right;font-size:32px;color:white;cursor:pointer;display:none;}
-      
-  
+    
+
+
   
 
 @media (max-width:800px){

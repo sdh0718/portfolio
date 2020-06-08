@@ -7,13 +7,39 @@
     object-fit: cover;z-index:3;}
 
 .welcome_h2{color: white; position: absolute; top: 20vh; left: 50%; width: 750px; 
-    transform: translateX(-50%);z-index: 5;}
-.welcome_h2>h2{font-size: 5.0em;}
+    transform: translateX(-50%);z-index: 10;}
+.welcome_h2>h2{font-size: 5.0em; color: white;}
 .welcome_h2>h3{font-size: 3.5em;}
-.btn_box{position: absolute; top: 80vh; left: 50%; transform: translateX(-50%); z-index: 5;}
+.btn_box{position: absolute; bottom: 20vh; left: 50%; transform: translateX(-50%); z-index: 5;}
 .btn_box input{padding: 10px 20px; background-color: transparent; font-size: 1.5em; cursor: pointer;
     border: 2px solid white; border-radius: 10px; color: white;}
 .btn_box input:hover{background-color: white;color: black;}
+
+.mouse_ani{position: absolute; bottom: 100px; left: 50%;transform: translate(-50%); z-index: 13;}
+.mouse_ani>img{ position: absolute;animation:mmove 1.5s infinite ease-in-out;}
+
+@keyframes mmove{
+    0%{top:0px;}
+    50%{top:20px;}
+    70%{top:20px;}
+    100%{top:0px;}
+}
+
+
+.typing-txt{display: none;}  
+
+.typing{  
+    /*position: absolute;*/ 
+    display: inline-block; 
+    animation-name: cursor; 
+    animation-duration: 0.7s; 
+    animation-iteration-count: infinite; 
+} 
+@keyframes cursor{ 
+    0%{border-right: 1px solid #000} 
+    50%{border-right: 1px solid #fff} 
+    100%{border-right: 1px solid #000} 
+}
 
 
 

@@ -7,7 +7,7 @@ $(function(){
         breakpoints: {
             800: {
                 spaceBetween:20,
-                slidesPerView:2.5,
+                slidesPerView:2.0,
             }
         },
         pagination: {
