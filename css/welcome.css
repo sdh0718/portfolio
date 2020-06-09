@@ -6,10 +6,10 @@
     background-size: 100% 100%;background-color: black;background-position: center center;background-size: contain;
     object-fit: cover;z-index:3;}
 
-.welcome_h2{color: white; position: absolute; top: 20vh; left: 50%; width: 750px; 
-    transform: translateX(-50%);z-index: 10;}
+.welcome_h2{position: absolute; top: 20vh; left: 50%; width: 70vh; 
+    transform: translateX(-50%);z-index: 10; font-size: 1.5vh;}
 .welcome_h2>h2{font-size: 5.0em; color: white;}
-.welcome_h2>h3{font-size: 3.5em;}
+.welcome_h2>h3{font-size: 3.5em; color: white;}
 .btn_box{position: absolute; bottom: 20vh; left: 50%; transform: translateX(-50%); z-index: 5;}
 .btn_box input{padding: 10px 20px; background-color: transparent; font-size: 1.5em; cursor: pointer;
     border: 2px solid white; border-radius: 10px; color: white;}
@@ -46,13 +46,14 @@
 
 @media (max-width:800px){
 .welcome_h2{width: 100%;text-align: center; top: 20vh;}
-.welcome_h2>h2{font-size: 3.0em;}
-.welcome_h2>h3{font-size: 2.0em;}
+.welcome_h2>h2{font-size: 4.0em;}
+.welcome_h2>h3{font-size: 3.0em;}
 .btn_box{top: 70vh;font-size: 0.8em;}
 .btn_box input{padding: 8px 10px;}
 }
 
-@media(max-width:400px){
-.welcome_h2>h2{font-size: 2.0em;}
-.welcome_h2>h3{font-size: 1.5em;}
+@media(max-width:500px){
+.welcome_h2{top: 30vh;}
+.welcome_h2>h2{font-size: 3.0em;}
+.welcome_h2>h3{font-size: 2.0em;}
 }

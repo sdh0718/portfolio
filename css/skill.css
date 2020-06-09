@@ -2,15 +2,14 @@
 
 
 #skill{text-align: center;}
-#skill h2{font-size: 5.0em; text-shadow: 10px 10px 5px gray; padding: 50px 0; color: black;}
+#skill h2{font-size: 5.0em; padding: 50px 0; color: #383F5B}
 #skill h3{font-size: 1.5em;padding-top: 10px; color: white;}
 #skill p{font-size: 1.3em; color: white;}
-#skill .content{width: 95%;padding-top: 15vh;}
+#skill .content{width: 95%;padding-top: 15vh; position: relative;}
 #skill .about_list{display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; 
     position: relative;}
 #skill .about_list li{width: 17%; height: 100%; padding-bottom: 15px;
-    overflow: hidden;border-radius: 5%; cursor: pointer; transition: 0.3s; 
-    box-shadow: 10px 10px 20px black;}
+    overflow: hidden;border-radius: 5%; cursor: pointer; transition: 0.3s;}
 #skill .about_list li:nth-child(1){background-color: #9b0d0a;}
 #skill .about_list li:nth-child(2){background-color: #d87825;}
 #skill .about_list li:nth-child(3){background-color: #0a729b;}
@@ -23,8 +22,8 @@
 #skill .about_list li>p:first-child{visibility: hidden;}
 #skill .about_list li:hover>p:first-child{visibility: visible;}
 
-#skill .progress{width: 50vw; height: 50px; position: absolute; bottom: 15vh; left: 50%; transform: translatex(-50%);
-    background-color: white; opacity: 0; border-radius: 50px; overflow: hidden; box-shadow: 10px 10px 20px black;}
+#skill .progress{width: 50vw; height: 50px; position: absolute; bottom: -15vh; left: 50%; transform: translatex(-50%);
+    background-color: white; opacity: 0; border-radius: 50px; overflow: hidden;}
 
 #skill .progress span{color: white;line-height: 50px; font-size: 2.0em;
     position: absolute;left:50%;top:50%;transform:translate(-50%,-50%);} 
@@ -37,6 +36,11 @@
 #skill .progrss::after{content:'';display:block;width:0;height:0;}
 
 
+@media (max-width:1000px){
+    #skill h3{font-size: 1.2em;}
+}
+
+
 @media (max-width:900px){
     #skill h2{font-size: 4.0em;padding: 30px 0;}
     #skill .content{width: 95%;padding-top: 60px;}
@@ -44,7 +48,7 @@
     #skill .about_list li{width: 25%; margin-bottom: 20px; margin-left: 20px;}
     #skill .about_list li>p:first-child{display: none;}
     #skill p{font-size: 1.0em;}
-    #skill .progress{width: 80vw;height: 40px;bottom: 7vh;}
+    #skill .progress{width: 80vw;height: 40px; bottom: -7vh;}
     #skill .progress span{font-size: 1.2em;}
 }
 

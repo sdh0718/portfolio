@@ -30,8 +30,6 @@
 <!-- 풀페이지 -->
     <link rel="stylesheet" href="css/fullpage.css">
     <script src="js/fullpage.js"></script>
-<!-- 애니메이션 -->
-    <link rel="stylesheet" href="css/animations.css">
 
 <!-- 외부 js파일 -->
     <script src="js/script_fullpage.js"></script>
@@ -64,7 +62,7 @@
     <header class="header">
         <div class="content">
             <div class="logo">
-                <h1><a href="#">PORTFOLIO</a></h1>
+                <h1><a href="index.html">PORTFOLIO</a></h1>
             </div>
             <nav class="nav">
                 <p id="open_nav_btn">&#x2630;</p>
@@ -89,10 +87,8 @@
                     <h3>I AM?</h3>
                     <h2 class="typing-txt">FRONT-END.</h2>
                     <h2 class="typing"></h2>
-                    <h2 class="typing-txt2">UI-UX DESINER.</h2>
-                    <h2 class="typing2"></h2>
-                    <h2 class="typing-txt3">WEB PUBLISHER.</h2>
-                    <h2 class="typing3"></h2>
+                    <h2>UI-UX DESINER.</h2>
+                    <h2>WEB PUBLISHER.</h2>
                 </div>
                 <div class="btn_box">
                     <a href="#portfolio" title="포트폴리오 섹션으로 이동">
@@ -110,12 +106,37 @@
         <section class="section" id="i_am">
             <div class="content">
                 <h2>About Me</h2>
-                <p>저는 이런 것을 할 수 있습니다.</p>
                 <ul class="about_list">
+                    <li class="txt_box">
+                        <div>
+                            <h3>웹 퍼블리셔</h3>
+                            <br>
+                            <p>디자인된 홈페이지를 CSS, HTML로 <br>구현하는 웹 퍼블리셔</p>
+                            <br><br>
+                        </div>
+                        <div>
+                            <h3>프론트 엔드</h3>
+                            <br>
+                            <p>JAVASCRIPT를 포괄하는 제작 업무를<br> 수행하는 프론트엔드 개발자</p>
+                            <br><br>
+                        </div>
+                        <div>
+                            <h3>UI-UX 디자인</h3>
+                            <br>
+                            <p>페이지를 보다 편리하게, 보기 편하게,<br> 직관적으로 반응하는 디자인</p>  
+                        </div>
+                        
+                    </li>
+                    <li class="img_box">
+                        <img src="images/about_me.png" alt="about_me">
+                    </li>
+                </ul>
+
+                <ul class="m_about_list">
                     <li>
-                        <div class="img_box">
+                        <div class="m_img_box">
                             <img src="images/webPublisher.png" alt="a">
-                            <div class="txt_box">
+                            <div class="m_txt_box">
                                 <h3>웹 퍼블리셔</h3>
                                 <p>디자인된 홈페이지를<br>
                                     CSS, HTML로 구현하는<br>
@@ -125,9 +146,9 @@
                         </div>
                     </li>
                     <li>
-                        <div class="img_box">
+                        <div class="m_img_box">
                             <img src="images/frontend.jpg" alt="a">
-                            <div class="txt_box">
+                            <div class="m_txt_box">
                                 <h3>프론트 엔드</h3>
                                 <p>JAVASCRIPT를 포괄하는<br>
                                     제작 업무를 수행하는<br>
@@ -137,9 +158,9 @@
                         </div>
                     </li>
                     <li>
-                        <div class="img_box">
+                        <div class="m_img_box">
                             <img src="images/UIUX.png" alt="a">
-                            <div class="txt_box">
+                            <div class="m_txt_box">
                                 <h3>UI-UX 디자인</h3>
                                 <p>페이지를 보다 편리하게, <br>
                                     보기 편하게,  <br>
@@ -215,22 +236,26 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"> 
-                            <a href="https://sdh0718.github.io/megabox">
+                            <a href="https://sdh0718.github.io/megabox"  title="메가박스 사이트로 이동">
                                 <img src="images/megabox-mockup.png" alt="메가박스">
                             </a>
                             <br>
                             <p>
-                                <a href="https://sdh0718.github.io/megabox/pc_web.html">메가박스 pc</a>
+                                <a href="https://sdh0718.github.io/megabox/pc_web.html" title="메가박스 pc로 이동">
+                                    메가박스 pc
+                                </a>
                             </p>
                             <p>|</p>
                             <p>
-                                <a href="https://sdh0718.github.io/megabox/mo/mo_web.html">메가박스 모바일</a>
+                                <a href="https://sdh0718.github.io/megabox/mo/mo_web.html" title="메가박스 모바일로 이동">
+                                    메가박스 모바일
+                                </a>
                             </p>
                             <br>
                             <p>CSS / JAVASCRIPT/ JQUERY / HTML</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://sdh0718.github.io/kia/">
+                            <a href="https://sdh0718.github.io/kia/"  title="기아 사이트로 이동">
                                 <img src="images/kia-mockup.png" alt="기아">
                             </a>
                             <br>
@@ -239,7 +264,7 @@
                             <p>CSS / JAVASCRIPT/ JQUERY / HTML</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://sdh0718.github.io/iwc/">
+                            <a href="https://sdh0718.github.io/iwc/"  title="iwc 사이트로 이동">
                                 <img src="images/iwc-mockup.png" alt="iwc">
                             </a>
                             <br>
@@ -248,7 +273,7 @@
                             <p>CSS / JAVASCRIPT/ JQUERY / HTML</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href=" https://sdh0718.github.io/tour/">
+                            <a href=" https://sdh0718.github.io/tour/"  title="tour 사이트로 이동">
                                 <img src="images/tour-mockup.png" alt="tour">
                             </a>
                             <br>
@@ -257,7 +282,7 @@
                             <p>CSS / JAVASCRIPT/ JQUERY / HTML</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://sdh0718.github.io/indigo/">
+                            <a href="https://sdh0718.github.io/indigo/" title="INDIGO 사이트로 이동">
                                 <img src="images/indigo-mockup.png" alt="인디고">
                             </a>
                             <br>
@@ -266,22 +291,26 @@
                             <p>CSS / JAVASCRIPT/ JQUERY / HTML</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://sdh0718.github.io/hansol-responsive/">
+                            <a href="https://sdh0718.github.io/hansol-responsive/" title="한솔 사이트로 이동">
                                 <img src="images/hansol-mockup.png" alt="한솔">
                             </a>
                             <br>
                             <p>
-                                <a href="https://sdh0718.github.io/hansol-no-responsive/">한솔제지 pc</a>
+                                <a href="https://sdh0718.github.io/hansol-no-responsive/"  title="한솔 pc로 이동">
+                                    한솔제지 pc
+                                </a>
                             </p>
                             <p>|</p>
                             <p>
-                                <a href="https://sdh0718.github.io/hansol-responsive/">한솔제지 반응형</a>
+                                <a href="https://sdh0718.github.io/hansol-responsive/" title="한솔 반응형으로 이동">
+                                    한솔제지 반응형
+                                </a>
                             </p>
                             <br>
                             <p>CSS / JAVASCRIPT/ JQUERY / HTML</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://sdh0718.github.io/hollyscoffee/">
+                            <a href="https://sdh0718.github.io/hollyscoffee/"  title="할리스 사이트로 이동">
                                 <img src="images/hollys-mockup.png" alt="할리스커피">
                             </a>
                             <br>
@@ -290,16 +319,16 @@
                             <p>CSS / HTML</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://sdh0718.github.io/selective/">
+                            <a href="https://sdh0718.github.io/selective/"  title="셀렉티브 사이트로 이동">
                                 <img src="images/selective-mockup.png" alt="셀렉티브">
                             </a> 
                             <br>
-                            <p>셀렉티브</p>
+                            <p>SELECTIVE</p>
                             <br>
                             <p>CSS / JAVASCRIPT/ JQUERY / HTML</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://sdh0718.github.io/line/">
+                            <a href="https://sdh0718.github.io/line/"  title="라인 사이트로 이동">
                                 <img src="images/line-mockup.png" alt="라인">
                             </a> 
                             <br>
@@ -350,23 +379,6 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="section">
-            <div class="bouncing">
-                <div class="bounce_box">
-                    <span>시</span>
-                    <span>청</span>
-                    <span>감</span>
-                    <span>사</span>
-                    <span>합</span>
-                    <span>니</span>
-                    <span>다</span>
-                    <span>!</span>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-
-        </section> -->
     </div>
 </div>
 

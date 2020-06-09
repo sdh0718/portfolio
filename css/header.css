@@ -7,7 +7,7 @@
 .nav>ul{display:flex;}
 .nav>ul>li>a{padding:0 16px;font-weight:bold;font-size:16px;}
 .header a{color: white;}
-.nav a:hover{color: lightcoral; }
+.header a:hover{color: #A9B2FD;}
 #open_nav_btn{font-size:32px;cursor:pointer;display:none;color: white;}
 #close_nav_btn{text-align:right;font-size:32px;color:white;cursor:pointer;display:none;}
     
