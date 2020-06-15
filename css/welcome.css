@@ -6,6 +6,7 @@
     background-size: 100% 100%;background-color: black;background-position: center center;background-size: contain;
     object-fit: cover;z-index:3;}
 
+#welcome .content{max-width: 1350px;}
 .welcome_h2{position: absolute; top: 20vh; left: 50%; width: 70vh; 
     transform: translateX(-50%);z-index: 10; font-size: 1.5vh;}
 .welcome_h2>h2{font-size: 5.0em; color: white;}

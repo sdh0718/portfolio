@@ -5,7 +5,7 @@
 #skill h2{font-size: 5.0em; padding: 30px 0; color: #383F5B}
 #skill h3{font-size: 1.5em;padding-top: 10px; color: white;}
 #skill p{font-size: 1.3em; color: white;}
-#skill .content{width: 95%;padding-top: 15vh; position: relative;}
+#skill .content{width: 95%;padding-top: 15vh; position: relative;max-width: 1350px;}
 #skill .about_list{display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; 
     position: relative;}
 #skill .about_list li{width: 17%; height: 100%; padding-bottom: 15px;
@@ -15,7 +15,7 @@
 #skill .about_list li:nth-child(3){background-color: #0a729b;}
 #skill .about_list li:nth-child(4){background-color: #2322a9;}
 #skill .about_list li:nth-child(5){background-color: #00af73;}
-#skill .about_list li:hover{transform:rotate(-8deg);}
+#skill .about_list li:hover{transform: rotate(-10deg);}
 #skill .about_list li.active{transform: scale(1.3);}
 #skill .img_box{overflow: hidden;width: 100%; height: 100%;padding: 20px 0; background-color: white;}
 #skill .img_box img{width: 50%;}
@@ -36,20 +36,31 @@
 #skill .progrss::after{content:'';display:block;width:0;height:0;}
 
 
+@keyframes move01{
+    0%{transform:rotate(18deg);}
+    30%{transform:rotate(-15deg);}
+    55%{transform:rotate(9deg);}
+    75%{transform:rotate(-6deg);}
+    100%{transform:rotate(0deg);}
+}
+
+
 @media (max-width:1000px){
     #skill h3{font-size: 1.2em;}
 }
 
 
 @media (max-width:900px){
-    #skill h2{font-size: 4.0em;padding: 30px 0;}
+    #skill h2{font-size: 3.0em;padding: 30px 0;}
     #skill .content{width: 95%;padding-top: 60px;}
     #skill .about_list{display: flex; flex-flow: row wrap; justify-content: space-around;}
-    #skill .about_list li{width: 25%; margin-bottom: 20px; margin-left: 20px;}
+    #skill .about_list li{width: 30%; margin-bottom: 10px; margin-left: 5px;}
+    #skill .about_list li.active{transform: scale(1.2);}
     #skill .about_list li>p:first-child{display: none;}
     #skill p{font-size: 1.0em;}
     #skill .progress{width: 80vw;height: 40px; bottom: -7vh;}
     #skill .progress span{font-size: 1.2em;}
+    
 }
 
 @media (max-width:500px){
