@@ -5,8 +5,8 @@ body::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera*/}
 .content{width: 90%;margin: 0 auto;}
 .section{box-sizing: border-box;width: 100vw; height: 100vh;}
 
-#i_am{background:linear-gradient(#383F5B 90%,#FFE2BD 10%)}
-#skill{background:linear-gradient(#FFE2BD 50%,#383F5B 50%)}
+#i_am{background:linear-gradient(#383F5B 85%,#FFE2BD 15%)}
+#skill{background:linear-gradient(#FFE2BD 60%,#383F5B 40%)}
 #portfolio{background-color:#383F5B;}
 #tel{background:linear-gradient(#383F5B 50%,#FFE2BD 50%)}
 

@@ -8,13 +8,13 @@
 #skill .content{width: 95%;padding-top: 15vh; position: relative;max-width: 1350px;}
 #skill .about_list{display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; 
     position: relative;}
-#skill .about_list li{width: 17%; height: 100%; padding-bottom: 15px;
-    overflow: hidden;border-radius: 5%; cursor: pointer; transition: 0.3s;}
-#skill .about_list li:nth-child(1){background-color: #9b0d0a;}
+#skill .about_list li{width: 17%; height: 100%; padding-bottom: 15px; margin-top: 50px; background-color:#666;
+    overflow: hidden; cursor: pointer; transition: 0.3s; border-radius: 3%;}
+/* #skill .about_list li:nth-child(1){background-color: #9b0d0a;}
 #skill .about_list li:nth-child(2){background-color: #d87825;}
 #skill .about_list li:nth-child(3){background-color: #0a729b;}
 #skill .about_list li:nth-child(4){background-color: #2322a9;}
-#skill .about_list li:nth-child(5){background-color: #00af73;}
+#skill .about_list li:nth-child(5){background-color: #00af73;} */
 #skill .about_list li:hover{transform: rotate(-10deg);}
 #skill .about_list li.active{transform: scale(1.3);}
 #skill .img_box{overflow: hidden;width: 100%; height: 100%;padding: 20px 0; background-color: white;}
@@ -22,17 +22,17 @@
 #skill .about_list li>p:first-child{visibility: hidden;}
 #skill .about_list li:hover>p:first-child{visibility: visible;}
 
-#skill .progress{width: 50vw; height: 50px; position: absolute; bottom: -15vh; left: 50%; transform: translatex(-50%);
+#skill .progress{width: 50vw; height: 50px; position: absolute; bottom: -20vh; left: 50%; transform: translatex(-50%);
     background-color: white; opacity: 0; border-radius: 50px; overflow: hidden;}
 
 #skill .progress span{color: white;line-height: 50px; font-size: 2.0em;
     position: absolute;left:50%;top:50%;transform:translate(-50%,-50%);} 
-#skill .progress::before{content:'';display: block; width: 0%; height: 50px;}
-#skill .pro01::before{width: 80%; background-color: #9b0d0a;}
-#skill .pro02::before{width:70%;background-color: #d87825;}
-#skill .pro03::before{width:95%;background-color: #0a729b;}
-#skill .pro04::before{width:100%;background-color: #2322a9;}
-#skill .pro05::before{width:80%;background-color: #00af73;}
+#skill .progress::before{content:'';display: block; width: 0%; height: 50px; background-color:#999;}
+#skill .pro01::before{width: 80%;}
+#skill .pro02::before{width:70%;}
+#skill .pro03::before{width:95%;}
+#skill .pro04::before{width:100%;}
+#skill .pro05::before{width:80%;}
 #skill .progrss::after{content:'';display:block;width:0;height:0;}
 
 
@@ -58,7 +58,7 @@
     #skill .about_list li.active{transform: scale(1.2);}
     #skill .about_list li>p:first-child{display: none;}
     #skill p{font-size: 1.0em;}
-    #skill .progress{width: 80vw;height: 40px; bottom: -7vh;}
+    #skill .progress{width: 80vw;height: 40px; bottom: -12vh;}
     #skill .progress span{font-size: 1.2em;}
     
 }
