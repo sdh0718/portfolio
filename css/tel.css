@@ -31,7 +31,6 @@
 }
 
 @media (max-width:800px){
-    #tel .content{padding-top: 30vh;}
     .tel_bg{height: 45vh; padding: 50px 20px;}
     .tel_bg h2{font-size: 2.5em;padding-bottom: 20px;}
     .tel_bg p{font-size: 1.5em;}
