@@ -11,6 +11,9 @@
     transform: translateX(-50%);z-index: 10; font-size: 1.5vh;}
 .welcome_h2>h2{font-size: 5.0em; color: white;}
 .welcome_h2>h3{font-size: 3.5em; color: white;}
+
+.welcome_txt{position: absolute; bottom: 30vh; left: 50%; transform: translateX(-50%); z-index: 5;}
+
 .btn_box{position: absolute; bottom: 20vh; left: 50%; transform: translateX(-50%); z-index: 5;}
 .btn_box input{padding: 10px 20px; background-color: transparent; font-size: 1.5em; cursor: pointer;
     border: 2px solid white; border-radius: 10px; color: white;}
