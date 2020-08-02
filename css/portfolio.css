@@ -3,7 +3,7 @@
 
 #portfolio .content{width:90%;}
 #portfolio h2{font-size: 7.0vh; color: white;padding-top: 13vh; padding-bottom: 15px; text-align: center;}
-.swiper-container{padding-bottom: 50px; padding-top: 0;width: 90vw;}
+.swiper-container{padding-bottom: 50px; padding-top: 0;width: 90vw; font-family: 'Noto Sans KR', sans-serif;}
 .swiper-slide{overflow: hidden; text-align: center; display: flex; align-items: center;}
 .swiper-slide img:hover{transform:scale(1.05);}
 /* .swiper-slide:hover p,.swiper-slide:hover a{color: #A9B2FD; transition: 0.3s;} */

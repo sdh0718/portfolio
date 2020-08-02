@@ -12,7 +12,7 @@
 
 #i_am .img_box{width: 40vw;}
 #i_am .img_box img{width: 100%; height: 100%;}
-#i_am .txt_box{width: 50vw; text-align: right; background-color: #383F5B; padding: 10px 50px;}
+#i_am .txt_box{width: 50vw; text-align: right; background-color: #383F5B; padding: 10px 50px; font-family: 'Noto Sans KR', sans-serif;}
 
 
 
@@ -28,7 +28,7 @@
 @media (max-width:700px){
     #i_am .about_list{display: none;}
     #i_am .m_about_list{padding-top: 30px;display: flex; flex-flow:row wrap; justify-content: space-around;
-        align-items: center;}
+        align-items: center; font-family: 'Noto Sans KR', sans-serif;}
     #i_am h2{font-size: 3.0em; margin-bottom: 30px;}
     #i_am .m_img_box{width: 220px; height: 220px; margin: 0; margin-bottom: 30px; position: relative;}
     #i_am .m_img_box::after{content: '';width: 100%; height: 100%; background-color: rgba(0,0,0,0.6);

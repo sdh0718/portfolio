@@ -7,7 +7,7 @@
 #skill p{font-size: 1.3em; color: white;}
 #skill .content{width: 95%;padding-top: 15vh; position: relative;max-width: 1350px;}
 #skill .about_list{display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; 
-    position: relative;}
+    position: relative; font-family: 'Noto Sans KR', sans-serif;}
 #skill .about_list li{width: 17%; height: 100%; padding-bottom: 15px; margin-top: 50px; background-color:#666;
     overflow: hidden; cursor: pointer; transition: 0.3s; border-radius: 3%;}
 #skill .about_list li:nth-child(1){background-color: #9b0d0a;}
@@ -23,7 +23,7 @@
 #skill .about_list li:hover>p:first-child{visibility: visible;}
 
 #skill .progress{width: 50vw; height: 50px; position: absolute; bottom: -20vh; left: 50%; transform: translatex(-50%);
-    background-color: white; opacity: 0; border-radius: 50px; overflow: hidden;}
+    background-color: white; opacity: 0; border-radius: 50px; overflow: hidden; font-family: 'Noto Sans KR', sans-serif;}
 
 #skill .progress span{color: white;line-height: 50px; font-size: 2.0em;
     position: absolute;left:50%;top:50%;transform:translate(-50%,-50%);} 
@@ -52,13 +52,14 @@
 
 @media (max-width:900px){
     #skill h2{font-size: 3.0em;padding: 30px 0;}
-    #skill .content{width: 95%;padding-top: 60px;}
+    #skill .content{width: 95%;padding-top: 20px;}
+    #skill .img_box{padding: 10px 0;}
     #skill .about_list{display: flex; flex-flow: row wrap; justify-content: space-around;}
-    #skill .about_list li{width: 30%; margin-bottom: 10px; margin-left: 5px;}
+    #skill .about_list li{width: 30%; margin:25px 0 5px 5px; padding-bottom: 10px;}
     #skill .about_list li.active{transform: scale(1.2);}
     #skill .about_list li>p:first-child{display: none;}
     #skill p{font-size: 1.0em;}
-    #skill .progress{width: 80vw;height: 40px; bottom: -12vh;}
+    #skill .progress{width: 70vw;height: 40px; bottom: -12vh;}
     #skill .progress span{font-size: 1.2em;}
     
 }
