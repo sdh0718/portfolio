@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+
+
+@media (max-width: 900px){
+
+
+
+    section{padding: 60px 0 50px; margin: 0; overflow: hidden; width: 100%; height: 100%; background: #14152F !important;}
+
+    nav.nav{padding: 0 5%; height: 60px; position: fixed; top: 0; left: 0;}
+    .nav ul.sns_icon,.nav ul.menu{display: none;}
+    .nav a.logo_nav{width: 80px; height: 100%;}
+
+    .header .head_sec {display: flex; flex-flow: column nowrap; justify-content: flex-end; align-items: center; padding-top: 80px; box-sizing: border-box;}
+    .header .head_sec .head_txt {width: 100%; height: 30vh; z-index: 1; position: unset; transform: unset;}
+    .header .head_sec .head_txt .logo{width: 100%; height: 30vh; left: 0; background-position: center center;}
+    .header .head_sec .head_txt p{font-size: 22px; text-align: center; text-indent: 0; display: none;}
+    .header .head_sec #model{width: 100%; height: 50vh; overflow: hidden; z-index: 2;}
+    .header .head_sec .model_img{position: unset; transform: unset; width: 100%; height: 100%;}
+    header.header .bak{display: none;}
+
+    
+
+    .drink_guide .drink_wrap{flex-flow: row wrap; align-items: start;}
+    .drink_guide .drink_wrap>div{height: auto; width: 50%; margin-top: 30px;}
+    .drink_guide h2{font-size: 40px; margin: 30px 0;}
+    .drink_guide h2 span{display: block;}
+    .drink_guide .drink_wrap .img_wrap{height: 250px;}
+    .drink_guide .drink_wrap img.product{height: 250px;}
+    .drink_guide .drink_wrap img.bak{bottom: 40px; right: 0px; width: 120px;}
+    .drink_guide .drink_wrap p{font-size: 20px; margin-top: 20px; line-height: 1.2em;}
+
+
+    
+    .drink_guide .drink_wrap img.product{border: 1px solid white !important; transform: translateX(-50%); animation: none !important;
+        background: white; border-radius: 5px;}
+    .drink_guide .drink_wrap:hover img.product{transform: translateX(-50%); animation: none !important;}
+
+    .drink_guide .drink1 img.product{box-shadow: 0 0 10px #00b3ff,0 0 20px #00b3ff;}
+    .drink_guide .drink2 img.product{box-shadow: 0 0 10px #ff5252,0 0 20px #ff5252;}
+    .drink_guide .drink3 img.product{box-shadow: 0 0 10px #ffc23e,0 0 20px #ffc23e;}
+
+    .drink_guide .drink1 img.bak{animation: rotation 1.5s ease-in-out infinite;}
+    .drink_guide .drink2 img.bak{animation: rotation 1.5s ease-in-out infinite;}
+    .drink_guide .drink3 img.bak{animation: rotation 1.5s ease-in-out infinite;}
+
+    .drink_guide .drink1 p{animation: txt1 1.5s ease-in-out infinite;}
+    .drink_guide .drink2 p{animation: txt2 1.5s ease-in-out infinite;}
+    .drink_guide .drink3 p{animation: txt3 1.5s ease-in-out infinite;}
+
+
+    .drink_sec .box_wrap{background-color: transparent;}
+    .drink_sec h2{display: block; margin: 0 auto; margin-bottom: -30px; margin-top: 50px; font-size: 36px; text-align: center; font-family: 'SDSamliphopangche_Outline';
+        background: url(../images/tit_bak.png) no-repeat; background-size: contain; background-position: center; 
+        width: 100%; max-width: 640px; height: 200px; line-height: 210px;}
+
+    .drink_sec .box_wrap{width: 100%; display: flex; flex-flow: column nowrap; justify-content: center; align-items: center; box-sizing: border-box;
+        padding: 0px 5%; margin-top: 0px;}
+    
+    .drink_sec .pro1 h2, .drink_sec .pro1 .box_wrap p i{text-shadow: 0 0 10px #00b3ff,0 0 20px #00b3ff,0 0 40px #00b3ff;}
+    .drink_sec .pro2 h2, .drink_sec .pro2 .box_wrap p i{text-shadow: 0 0 10px #ff5252,0 0 20px #ff5252,0 0 40px #ff5252;}
+    .drink_sec .pro3 h2, .drink_sec .pro3 .box_wrap p i{text-shadow: 0 0 10px #ffc23e,0 0 20px #ffc23e,0 0 40px #ffc23e;}
+
+    .drink_sec .txt_box{width: 100%; position: unset; padding-top: 0; margin: 0;}
+
+    .drink_sec .box_wrap p{font-size: 22px; line-height: 1.2em; font-family: 'SDSamliphopangche_Basic'; margin-bottom: 20px;}
+    .drink_sec .box_wrap p i{display: inline-block; width: 30px;}
+    .drink_sec .box_wrap p>span{display: inline-block;  font-size: 16px;}
+
+    .drink_sec .img_box{height: 360px; position: unset; transform: unset; margin-bottom: 20px;}
+    .drink_sec .img_box img{height: 300px; border: 1px solid #fff; display: block; margin: 0 auto; border-radius: 10px; background: white;}
+    .drink_sec .pro1 .img_box img, .drink_sec .pro1 .img_box .button_sell{box-shadow: 0 0 10px #00b3ff,0 0 20px #00b3ff, 0 0 40px #00b3ff;}
+    .drink_sec .pro2 .img_box img, .drink_sec .pro2 .img_box .button_sell{box-shadow: 0 0 10px #ff5252,0 0 20px #ff5252, 0 0 40px #ff5252;}
+    .drink_sec .pro3 .img_box img, .drink_sec .pro3 .img_box .button_sell{box-shadow: 0 0 10px #ffc23e,0 0 20px #ffc23e, 0 0 40px #ffc23e;}
+
+
+    .drink_sec .img_box .button_sell{width: 180px; border-radius: 10px; position: relative; margin-top: -10px; border: 2px solid white;
+        background-color: white;}
+
+    .drink_sec .img_box .button_sell a{position: relative; z-index: 3; display: flex; flex-flow: row nowrap; justify-content: center;
+        padding: 12px 0 10px; background: white; border-radius: 17px; text-align: center; letter-spacing: 1px; line-height: 1.5em;}
+    
+    
+
+    .drink_sec .img_box .button_sell a span{font-family: 'SDSamliphopangche_Basic'; font-size: 24px;}
+    .drink_sec .img_box .button_sell a i{font-size: 20px; margin-right: 4px;}
+
+    .drink_sec .pro1 .button_sell a span,
+    .drink_sec .pro1 .button_sell a i{color: #00b3ff;}
+
+    .drink_sec .pro2 .button_sell a span,
+    .drink_sec .pro2 .button_sell a i{color: #ff5252;}
+
+    .drink_sec .pro3 .button_sell a span,
+    .drink_sec .pro3 .button_sell a i{color: #ffc23e;}
+
+    .drink_sec .tag_wrap a{margin-right: 30px;}
+    .drink_sec .tag_wrap a{display: block; width: 150px; height: 40px; cursor: pointer; font-family: 'SDSamliphopangche_Basic'; float: unset; 
+        transition: 0.5s; letter-spacing: 1px; border: 2px solid white; font-size: 20px; line-height: 40px; border-radius: 30px; 
+        background: transparent; text-align: center; background: #14152F;  margin: 0 auto;}
+    .drink_sec .pro1 .tag_wrap a{box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, inset 0 0 10px #00b3ff, inset 0 0 20px #00b3ff;}
+    .drink_sec .pro2 .tag_wrap a{box-shadow: 0 0 10px #ff5252, 0 0 20px #ff5252, inset 0 0 10px #ff5252, inset 0 0 20px #ff5252;}
+    .drink_sec .pro3 .tag_wrap a{box-shadow: 0 0 10px #ffc23e, 0 0 20px #ffc23e, inset 0 0 10px #ffc23e, inset 0 0 20px #ffc23e;}
+    
+
+    
+
+
+
+    .drink_mov .tit_wrap h2{font-size: 40px; line-height: 1.3em;}
+    .drink_mov .tit_wrap h2 strong{display: block;}
+    .drink_mov .tit_wrap h3{font-size: 20px;}
+
+    .drink_mov .video_wrap{padding: 30px 0;}
+    .drink_mov .video_wrap .vid{width: 100%; height: 300px; margin-bottom: 40px;}
+    .drink_mov .video_wrap .vid iframe{width: 100%; height: 100%; box-shadow: 0 0 10px #2356ff,0 0 20px #2356ff;}
+
+    /* .drink_mov .video_wrap .video1 iframe, .drink_mov .video_wrap .video4 iframe{
+        box-shadow: 0 0 10px #00b3ff,0 0 20px #00b3ff, 0 0 40px #00b3ff;}
+    .drink_mov .video_wrap .video2 iframe, .drink_mov .video_wrap .video5 iframe{
+        box-shadow: 0 0 10px #ff5252,0 0 20px #ff5252, 0 0 40px #ff5252;}
+    .drink_mov .video_wrap .video3 iframe, .drink_mov .video_wrap .video6 iframe{
+        box-shadow: 0 0 10px #ffc23e,0 0 20px #ffc23e, 0 0 40px #ffc23e;} */
+
+
+
+    
+    .drink_event .tit_wrap{width: 100%; padding: 0; padding-bottom: 50px;}
+    .drink_event .con_wrap{display: flex; flex-flow: column nowrap; width: 100%; height: 100%;}
+    .drink_event .txt_wrap{width: 100%; padding: 30px 20px; box-sizing: border-box;}
+    .drink_event .tit_wrap h2{font-size: 40px;}
+    .drink_event .tit_wrap h3{font-size: 20px;}
+    .drink_event .txt_wrap img {width: 300px; height: 230px; position: unset; border: 1px solid #fff; display: block; margin: 0 auto;
+        box-shadow:0 0 10px #ffc23e,0 0 20px #ffc23e,0 0 40px #ffc23e;}
+    .drink_event .txt_wrap h4{font-size: 24px; font-family: 'SDSamliphopangche_Basic'; text-shadow: 0 0 10px #ffc23e, 0 0 20px #ffc23e;
+        margin: 40px 0 10px;}
+        
+
+    .footer{ background: #14152F; padding: 20px 0; box-sizing: border-box;}
+
+}
+
+
+@media (max-width:768px){
+
+
+}

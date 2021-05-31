@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+
+
+/* nav.nav{position: fixed; background: transparent; width: 100%; height: 80px; z-index: 99; box-sizing: border-box;
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;}
+.nav ul li{display: inline-block;}
+.nav ul.sns_icon{width: 45%; margin-left: 5%;}
+.nav ul.sns_icon li i{font-size: 30px; text-indent: 30px; cursor: pointer; transition: .5s; color: black;}
+.nav ul.sns_icon li:last-child i{font-size: 28px;}
+.nav ul.sns_icon li:last-child p{display: inline-block; font-size: 24px; font-family: 'SDSamliphopangche_Basic'; transition: .5s; opacity: 0; margin-left: 5px;}
+.nav ul.sns_icon li:last-child:hover p{opacity: 1;}
+
+.nav a.logo_nav{display: block; width: 10%; height: 80%; background: url(../images/nav_tit2.png) no-repeat; background-size: contain; background-position: center bottom;
+    text-indent: 100%; white-space: nowrap; overflow: hidden;}
+.nav ul.menu{width: 45%; margin-right: 5%; text-align: right;}
+.nav ul.menu li {text-indent: 30px;}
+.nav ul.menu li a{font-size: 24px; font-family: 'SDSamliphopangche_Basic'; transition: .5s; color: #333; }
+
+.nav ul.menu li a:hover{ color: #2356ff;}
+.nav ul.sns_icon li i:hover{ color: #2356ff;} */
+
+#nav1{display: flex;}
+#nav2{display: none;}
+
+nav.nav{position: relative; background: transparent; width: 100%; height: 80px; z-index: 99; box-sizing: border-box;
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;}
+.nav ul li{display: inline-block;}
+.nav ul.sns_icon{width: 45%; margin-left: 5%;}
+.nav ul.sns_icon li i{font-size: 30px; text-indent: 30px; cursor: pointer; transition: .5s; text-shadow: -1px 0 #14152F, 0 1px #14152F, 1px 0 #14152F, 0 -1px #14152F;}
+.nav ul.sns_icon li i:hover{text-shadow: 0 0 10px #2356ff,0 0 20px #2356ff,0 0 40px #2356ff;}
+.nav ul.sns_icon li:last-child i{font-size: 28px;}
+.nav ul.sns_icon li:last-child:hover p,
+.nav ul.sns_icon li:last-child:hover i{text-shadow: 0 0 10px #ff5252, 0 0 20px #ff5252, 0 0 40px #ff5252;}
+.nav ul.sns_icon li:last-child p{display: inline-block; font-size: 24px; font-family: 'SDSamliphopangche_Basic'; transition: .5s; opacity: 0;
+    margin-left: 5px;}
+.nav ul.sns_icon li:last-child:hover p{opacity: 1;}
+
+.nav a.logo_nav{display: block; width: 10%; height: 80%; background: url(../images/nav_tit.png) no-repeat; background-size: contain; background-position: center bottom;
+    text-indent: 100%; white-space: nowrap; overflow: hidden;}
+.nav ul.menu{width: 45%; margin-right: 5%; text-align: right;}
+.nav ul.menu li {text-indent: 30px;}
+.nav ul.menu li a{font-size: 24px; font-family: 'SDSamliphopangche_Basic'; transition: .5s;
+    text-shadow: -1px 0 #14152F, 0 1px #14152F, 1px 0 #14152F, 0 -1px #14152F;}
+.nav ul.menu li a:hover{text-shadow: 0 0 10px #2356ff,0 0 20px #2356ff,0 0 40px #2356ff;}
+
+
+*{position: relative; z-index: 1;}
+
+
+.wrap{background-color: #14152F;}
+.bak{width: 100%; height: 100vh; background: url(../images/slide_bak.png) no-repeat; background-size: cover; background-position: center;
+    position: fixed; z-index: 0 !important;}
+
+.tit_wrap{max-width: 1280px; margin: 0 auto; padding: 50px 20px 0; border-bottom: 3px solid #2356ff; box-sizing: border-box;
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: flex-end;}
+.tit_wrap h2{font-size: 38px; font-family: 'SDSamliphopangche_Basic'; text-shadow: 0 0 10px #2356ff,0 0 20px #2356ff,0 0 40px #2356ff;
+    margin-top: 100px; padding-bottom: 10px; line-height: 1.2em;}
+.tit_wrap span{display: block; font-size: 18px; font-family: 'SDSamliphopangche_Basic'; padding-bottom: 14px;}
+
+
+.con_wrap{max-width: 1280px; margin: 0 auto; padding: 50px 20px 80px; display: flex; flex-flow: column nowrap; box-sizing: border-box;
+    /* background-color: rgba(255,255,255,0.2); */
+}
+
+.con_wrap img{width: 100%; max-width: 820px; height: auto; margin: 0 auto;}
+.con_wrap p{text-align: center; line-height: 1.4em; font-size: 18px; padding-top: 30px; text-shadow:0 0 10px #000, 0 0 20px #000;}
+
+
+
+
+#footer{height: 300px !important; background-color: #14152F; box-sizing: border-box; padding: 40px 0; margin-top: -1px;}
+.foot_wrap{display: flex; flex-flow: row nowrap;}
+.foot_wrap .img{width: 200px; height: 100%; margin: 0 auto; background: url(../images/nav_tit.png) no-repeat; background-size: contain;
+    background-position: center center;}
+.foot_wrap>div:first-child{width: 25%;}
+.foot_wrap>div:last-child{width: 75%; padding-right: 10%; box-sizing: border-box;}
+.foot_wrap>div h2{font-size: 28px; font-family: 'SDSamliphopangche_Outline';  margin-bottom: 20px;}
+.foot_wrap>div span{line-height: 2.0em; font-weight: 300;}
+.foot_wrap>div span:after{content: '|'; margin: 0 10px;}
+.foot_wrap>div span strong{font-weight: 700;}
+
+.copyright{text-align: center; padding-top: 50px;}
+
+
+
+
+
+
+@media (max-width: 1200px){
+
+    .nav ul.sns_icon{margin-left: 2%; width: 40%;}
+    .nav ul.menu{margin-right: 2%; width: 50%;}
+    .nav ul.menu li {text-indent: 20px;}
+    .nav ul.menu li a{font-size: 22px;}
+    .nav ul.sns_icon li:last-child p{font-size: 20px;}
+
+    .tit_wrap {width: 94%;}
+
+}
+
+
+@media (max-width: 900px){
+    
+
+    #nav1{display: none;}
+    #nav2{display: flex;}
+
+    nav.nav2{padding: 0 5%; height: 60px; position: fixed; top: 0; left: 0;}
+    .nav2 a.logo_nav{width: 80px; height: 100%;}
+
+    .tit_wrap{max-width: 1280px; margin: 0 auto; padding: 50px 20px 0; border-bottom: 3px solid #2356ff; box-sizing: border-box;
+        display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: flex-end;}
+    .tit_wrap h2{font-size: 32px;}
+
+    .con_wrap{padding: 50px 20px 80px;}
+
+        
+    #footer{height: auto !important; background-color: #14152F; box-sizing: border-box; padding: 20px 0; margin: 0; overflow: hidden;}
+    .foot_wrap{display: flex; flex-flow: column nowrap;}
+    .foot_wrap>div:first-child{width: 100%; margin: 30px 0 50px;}
+    .foot_wrap>div:first-child .img{width: 100%; height: 100px; background-position: center;}
+    .foot_wrap>div:last-child{width: 100%; padding: 0 5%; margin-bottom: 30px;}
+    .foot_wrap>div span{display: block; line-height: 1.6em; margin-bottom: 12px;}
+    .foot_wrap>div span:after{content: '';}
+    .copyright{padding: 0; margin: 50px 0;}
+
+}

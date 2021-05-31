@@ -1,571 +1,988 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- 제작자 -->
-    <meta name="author" content="sdh">
-<!-- 설명 -->
-    <meta name="description" content="web portfolio">
-<!-- 키워드 -->
-    <meta name="keywords" content="포트폴리오, portfolio, web, 웹, 취업, 웹 퍼블리셔, 웹 디자이너, UI-UX">
-<!-- 링크공유 -->
-    <meta property="og:url" content="https://sdh0718.github.io/portfolio/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="my portfolio">
-    <meta property="og:image" content="images/portfolio.png">
-    <meta property="og:description" content="저의 포트폴리오를 소개합니다.">
-<!-- 파비콘 -->
-    <link rel="shortcut icon" href="images/favicon.png">
 
-    <title>나의 포트폴리오</title>
+    <title>한잔허재</title>
 
-<!-- 제이쿼리 -->
-    <script src="js/jquery-3.5.0.js"></script>
-<!-- 스와이퍼 -->
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <script src="js/swiper.js"></script>
-    <script src="js/swiper.min.js"></script>
-<!-- 풀페이지 -->
-    <link rel="stylesheet" href="css/fullpage.css">
-    <script src="js/fullpage.js"></script>
 
-<!-- 외부 js파일 -->
-    <script src="js/script_fullpage.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/skip_menu.js"></script>
-    <script src="js/script_swiper.js"></script>
-    <script src="js/temp.js"></script>
-
-<!-- 외부 css파일 -->
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--fullpage-->
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- etc -->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/skip_menu.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/welcome.css">
-    <link rel="stylesheet" href="css/i_am.css">
-    <link rel="stylesheet" href="css/skill.css"> 
-    <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/tel.css">
-  
-    <meta name="google-site-verification" content="_L0EMa8i62MsgbYB0o152IY5B_yEAG_KtDUa4KwGvFE" />
-    
-</head>
-<body>
-<ul class="skip_menu">
-    <li><a href="#welcome">어서오세요</a></li>
-    <li><a href="#i_am">나는 누구인가?</a></li>
-    <li><a href="#skill">기술</a></li>
-    <li><a href="#portfolio">작품집</a></li>
-    <li><a href="#tel">연락주세요</a></li>
-</ul>
-<div class="wrap">
-    <header class="header">
-        <div class="content">
-            <div class="logo">
-                <h1><a href="index.html">PORTFOLIO</a></h1>
-            </div>
-            <nav class="nav">
-                <p id="open_nav_btn">&#x2630;</p>
-                <ul>
-                    <li id="close_nav_btn">&#x2715;</li>  
-                    <li><a href="#welcome">Welcome</a></li>
-                    <li><a href="#i_am">About me</a></li>
-                    <li><a href="#skill">Skill</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#tel">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div id="fullpage">
-        <section class="section" id="welcome">
-            <div class="content">
-                <video id="myVideo" loop muted data-autoplay>
-                    <source src="media/movie01.mp4">
-                </video>
-                <div class="welcome_h2">
-                    <h3>I AM?</h3>
-                    <h2 class="typing-txt">WEB PUBLISHER.</h2>
-                    <h2 class="typing"></h2>
-                    <h2>UI-UX DESINER.</h2>
-                    <h2>WEB DESINER.</h2>
-                </div>
-                <div class="welcome_txt"><p>본 홈페이지는 반응형으로 만들어졌습니다. <br>브라우저 사이즈를 움직여보세요!</p> </div>
-                <div class="btn_box">
-                    <a href="#portfolio" title="포트폴리오 섹션으로 이동">
-                        <input type="button" value="portfolio">
-                    </a>
-                    <a href="https://github.com/sdh0718" title="깃헙 페이지로 이동" target="_blank">
-                        <input type="button" value="github">
-                    </a>
-                </div>
-                <div class="mouse_ani">
-                    <img src="images/ico-mouse.png" alt="마우스">
-                </div>
-            </div>
-        </section>
-        <section class="section" id="i_am">
-            <div class="content">
-                <h2>About Me</h2>
-                <ul class="about_list">
-                    <li class="txt_box">
-                        <div>
-                            <h3>웹 퍼블리셔</h3>
-                            <br>
-                            <p>디자인된 홈페이지를 CSS, HTML로 <br>구현하는 웹 퍼블리셔</p>
-                            <br><br>
-                        </div>
-                        <div>
-                            <h3>웹 디자이너</h3>
-                            <br>
-                            <p>PHOTOSHOP 등을 이용해 최신 트렌드<br> 웹을 만드는 웹 디자이너</p>
-                            <br><br>
-                        </div>
-                        <div>
-                            <h3>UI-UX 디자인</h3>
-                            <br>
-                            <p>페이지를 보다 편리하게, 보기 편하게,<br> 직관적으로 반응하는 디자인</p>  
-                        </div>
-                        
-                    </li>
-                    <li class="img_box">
-                        <img src="images/about_me.png" alt="about_me">
-                    </li>
-                </ul>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
 
-                <ul class="m_about_list">
-                    <li>
-                        <div class="m_img_box">
-                            <img src="images/webPublisher.png" alt="a">
-                            <div class="m_txt_box">
-                                <h3>웹 퍼블리셔</h3>
-                                <p>디자인된 홈페이지를<br>
-                                    CSS, HTML로 구현하는<br>
-                                    웹 퍼블리셔
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="m_img_box">
-                            <img src="images/web-design.jpg" alt="a">
-                            <div class="m_txt_box">
-                                <h3>웹 디자이너</h3><br>
-                                <p>PHOTOSHOP 등으로<br>  
-                                    최신 트렌드 웹을<br>
-                                    만드는 웹 디자이너
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="m_img_box">
-                            <img src="images/UIUX.png" alt="a">
-                            <div class="m_txt_box">
-                                <h3>UI-UX 디자인</h3>
-                                <p>페이지를 보다 편리하게, <br>
-                                    보기 편하게, <br>
-                                    직관적으로 반응하는 <br>
-                                    디자인
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>          
-        </section>
-        <section class="section" id="skill">
-            <div class="content">
-                <h2>My Skill</h2>
-                <ul class="about_list">
-                    <li>
-                        <p>클릭!</p>
-                        <div class="img_box">
-                            <img src="images/aaa_html.png" alt="image01">
-                        </div>
-                        <h3>HTML</h3>
-                        <p>html</p>
-                    </li>
-                    <li>
-                        <p>클릭!</p>
-                        <div class="img_box">
-                            <img src="images/aaa_js.png" alt="image02">
-                        </div>
-                        <h3>JS</h3>
-                        <p>자바/제이쿼리</p>
-                    </li>
-                    <li>
-                        <p>클릭!</p>
-                        <div class="img_box">
-                            <img src="images/aaa_css.png" alt="image03">
-                        </div>
-                        <h3>CSS</h3>
-                        <p>css</p>
-                    </li>
-                    <li>
-                        <p>클릭!</p>
-                        <div class="img_box">
-                            <img src="images/aaa_psd.png" alt="image04">
-                        </div>
-                        <h3>PHOTOSHOP</h3>
-                        <p>포토샵/일러스트</p>
-                    </li>
-                    <li>
-                        <p>클릭!</p>
-                        <div class="img_box">
-                            <img src="images/aaa_uiux.png" alt="image05">
-                        </div>
-                        <h3>UI/UX</h3>
-                        <p>반응형 웹페이지</p>
-                    </li>
-                </ul>
-                <div class="progress pro01">
-                    <span>숙련도 : 80%</span>
+
+</head>
+
+<body>
+    <div id="wrap" class="wrap">
+
+        <div class="loading">
+            <div class="loader">
+
+            </div>
+        </div>
+
+        <nav class="nav" id="nav">
+            <ul class="sns_icon">
+                <li>
+                    <a href="" target="_blank" title="한잔허재 인스타그램">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" title="한잔허재 페이스북">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://smartstore.naver.com/521global" target="_blank" title="한잔허재 사러가기!">
+                        <i class="fas fa-store"></i>
+                        <p>한잔허재 사러가기!</p>
+                    </a>
+                </li>
+            </ul>
+            <a href="#1page" class="logo_nav">한잔허재</a>
+            <ul id="#menu" class="menu">
+                <li><a href="#2page">브랜딩허재</a> </li>
+                <li><a href="#3page">상품허재</a> </li>
+                <li><a href="#4page">영상허재</a> </li>
+                <li><a href="#5page">이벤트허재</a> </li>
+            </ul>
+
+        </nav>
+
+        <!-- pop up cookie -->
+
+        <div class="pop_up pop_up1">
+            <a href="event1.html" target="_blank">
+                <div class="event_img"></div>
+            </a>
+            <form>
+                <input type="radio" name="notsee1" id="1_day3" title="1일간 보지 않기">
+                <label for="1_day3">1일간 보지 않기</label>
+                <input type="radio" name="notsee1" id="1_allday" title="다시 보지 않기">
+                <label for="1_allday">다시 보지 않기</label>
+                <i id="closebtn1" class="fas fa-window-close closebtn" title="닫기"></i>
+            </form>
+        </div>
+
+        <div class="pop_up pop_up2">
+            <a href="event2.html" target="_blank">
+                <div class="event_img"></div>
+            </a>
+            <form>
+                <input type="radio" name="notsee2" id="2_day3" title="1일간 보지 않기">
+                <label for="2_day3">1일간 보지 않기</label>
+                <input type="radio" name="notsee2" id="2_allday" title="다시 보지 않기">
+                <label for="2_allday">다시 보지 않기</label>
+                <i id="closebtn2" class="fas fa-window-close closebtn" title="닫기"></i>
+            </form>
+        </div>
+
+        <!-- <div class="pop_up pop_up3">
+            <a href="event3.html" target="_blank">
+                <div class="event_img"></div>
+            </a>
+            <form>
+                <input type="radio" name="notsee3" id="3_day3" title="1일간 보지 않기">
+                <label for="3_day3">1일간 보지 않기</label>
+                <input type="radio" name="notsee3" id="3_allday" title="다시 보지 않기">
+                <label for="3_allday">다시 보지 않기</label>
+                <i id="closebtn3" class="fas fa-window-close closebtn" title="닫기"></i>
+            </form>
+        </div> -->
+
+        
+
+        <div id="fullpage">
+
+            <header id="#1page" class="section header">
+                <div class="bak"></div>
+                <div class="head_sec">
+                    <div class="head_txt">
+                        <div class="logo"></div>
+                        <p>숙취해소를 위해 그가 왔다! 한잔허재!</p>
+                    </div>
+                    <div id="model">
+                        <div class="model_img model1"></div>
+                        <div class="model_img model2"></div>
+                        <div class="model_img model3"></div>
+                    </div>
                 </div>
-                <div class="progress pro02">
-                    <span>숙련도 : 70%</span>
-                </div>
-                <div class="progress pro03">
-                    <span>숙련도 : 95%</span>
-                </div>
-                <div class="progress pro04">
-                    <span>숙련도 : 100%</span>
-                </div>
-                <div class="progress pro05">
-                    <span>숙련도 : 80%</span>
-                </div>
-            </div>       
-        </section>
-        <section class="section" id="portfolio">
-            <div class="content">
-                <h2>PORTFOLIO</h2>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"> 
-                            <div>
-                                <a href="https://sdh0718.github.io/megabox"  title="메가박스 사이트로 이동" target="_blank">
-                                    <img src="images/mockup-megabox.png" alt="메가박스">
-                                </a>
-                                <br>
-                                <p>
-                                    <a href="https://sdh0718.github.io/megabox/pc_web.html" title="메가박스 pc로 이동"  target="_blank">
-                                        메가박스 pc
-                                    </a>
-                                </p>
-                                <p>|</p>
-                                <p>
-                                    <a href="https://sdh0718.github.io/megabox/mo/mo_web.html" title="메가박스 모바일로 이동"  target="_blank">
-                                        메가박스 모바일
-                                    </a>
-                                </p>
-                                <br>
-                                <p>HTML / JAVASCRIPT & JQUERY / CSS</p>
+            </header>
+
+
+
+            <section id="#2page" class="section drink_guide">
+                <div class="sec_wrap">
+                    <h2> <span class="neon">빠른 숙취해소 ?</span> <span class="flux">이제는 한잔허재 !</span> </h2>
+                    <p>다양한 한잔허재로 남들보다 빠르게 깨어나자!</p>
+
+                    <div class="drink_wrap">
+                        <div class="drink drink1">
+                            <div class="img_wrap">
+                                <img class="product" src="images/product_jelly.png" alt="1">
+                                <img class="bak" src="images/pro_bak1.png"></img>
                             </div>
-                            <ul>
-                                <li>
-                                    원본 홈페이지 : <a href="https://www.megabox.co.kr/">https://www.megabox.co.kr/</a> 
-                                </li>
-                                <li>
-                                    접속하는 기기의 해상도에 따라 PC화면, 모바일로 접속할 수 있습니다.
-                                </li>
-                                <li>
-                                    Burger버튼을 클릭하면 메뉴 목록을 볼 수 있고,  내비게이션 부분을 마우스 오버 하면 메뉴를 볼 수 있습니다.
-                                </li>
-                                <li>
-                                    Popup cookie를 사용해 팝업을 구현하였고, 차트 부분은 swiper로 슬라이드를 만들었습니다.
-                                </li>
-                                <li>
-                                    혜택 부분은 grid 시스템을 이용해 섹션의 파트를 나눴고, 이미지 두 장을 JS로 코딩해 연결하고 동시에 slide되도록 만들었습니다.
-                                </li>
-                            </ul>
+                            <p>
+                                마시기 전에<br>
+                                미리 준비하자!
+                            </p>
                         </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <a href="https://sdh0718.github.io/kia/"  title="기아 사이트로 이동"  target="_blank">
-                                    <img src="images/mockup-kia.png" alt="기아">
-                                </a>
-                                <br>
-                                <p>KIA 반응형</p>
-                                <br>
-                                <p>HTML / JAVASCRIPT & JQUERY / CSS</p>
+                        <div class="drink drink2">
+                            <div class="img_wrap">
+                                <img class="product" src="images/product_pill.png" alt="2">
+                                <img class="bak" src="images/pro_bak2.png"></img>
                             </div>
-                            <ul>
-                                <li>원본 홈페이지 : <a href="https://www.kia.com/">https://www.kia.com/</a></li>
-                                <li>
-                                    PC,태블릿,휴대폰의 여러 브라우저의 해상도에 즉각 반응하도록 제작 되어 있습니다.
-                                </li> 
-                                <li>
-                                    내비의 차량, 구매정보, 체험센터, 이벤트를 클릭 시 메뉴가 토글 됩니다. 차량 메뉴에는 CSS와 JS로 만든 애니메이션 효과를 사용했습니다. 
-                                </li>
-                                <li>
-                                    로그인을 클릭 시 별도 로그인 페이지로 이동합니다.
-                                </li>
-                                <li>
-                                    Best Kia 섹션 슬라이드는 CSS로 효과를 주었습니다. 이미지 타겟 시에, 좌 우 이미지에 
-                                    마우스 오버했을 시에 scale이 커집니다. 좌 우 마지막 이미지는 투명도가 조절됩니다.
-                                </li>
-                            </ul>
+                            <p>
+                                마시고 난 후<br>
+                                빠른 숙취해소!
+                            </p>
                         </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <a href="https://sdh0718.github.io/iwc/"  title="iwc 사이트로 이동"  target="_blank">
-                                    <img src="images/mockup-iwc.png" alt="iwc">
-                                </a>
-                                <br>
-                                <p>iwc 반응형</p>
-                                <br>
-                                <p>HTML / JAVASCRIPT & JQUERY / CSS</p>
+                        <div class="drink drink3">
+                            <div class="img_wrap">
+                                <img class="product" src="images/product_sok.png" alt="3">
+                                <img class="bak" src="images/pro_bak5.png"></img>
                             </div>
-                            <ul>
-                                <li>원본 홈페이지 : <a href="https://www.iwc.com/ko/">https://www.iwc.com/ko/</a></li>
-                                <li>
-                                    PC,태블릿,휴대폰의 여러 브라우저의 해상도에 즉각 반응하도록 제작 되어 있습니다.
-                                </li> 
-                                <li>
-                                    내비의 메뉴, 시계를 클릭하면 메뉴가 토글 되도록 제작 되어 있습니다. 돋보기, 언어선택이 토글 되도록 구현 되어 있습니다. 
-                                    사람 아이콘을 클릭 시 로그인 창이 팝업 됩니다.
-                                </li>
-                                <li>
-                                    피드백 버튼을 클릭 시 info가 팝업되도록 CSS로 제작되었고, 스크롤을 내릴 시 상단으로 가는 버튼을 JS로 구현하였습니다. 
-                                    페이지를 끝까지 내리면 상단으로 가는 버튼이 맨 위로 ^ 버튼으로 변경되게 제작하였습니다.
-                                </li>
-                            </ul>
+                            <p>
+                                건강한 내 몸을 위한<br>
+                                속편허재!
+                            </p>
                         </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <a href=" https://sdh0718.github.io/tour/"  title="tour 사이트로 이동"  target="_blank">
-                                    <img src="images/mockup-tour.png" alt="tour">
-                                </a>
-                                <br>
-                                <p>Tourist in tour 반응형</p>
-                                <br>
-                                <p>HTML / JAVASCRIPT & JQUERY / CSS</p>
+                        <div class="drink drink4">
+                            <div class="img_wrap">
+                                <img class="product" src="images/product_jelly.png" alt="3">
+                                <img class="bak" src="images/pro_bak4.png"></img>
                             </div>
-                            <ul>
-                                <li>원본 홈페이지 : 자체제작</li>
-                                <li>
-                                    PC, 휴대폰으로 브라우저 해상도를 변경 시 반응하도록 제작되었습니다.
-                                </li>
-                                <li>
-                                    마이페이지, 고객센터, 상품투어, 로그인, 회원가입의 각 페이지가 제작, 구현 되어 있습니다.
-                                </li>
-                                <li>
-                                    스크롤을 내릴 시 나타나는 안내문의 외 상단으로 가는 버튼을 JS로 구현하였습니다.
-                                </li>
-                                <li>
-                                    모바일 페이지 접속 시 burger 메뉴를 클릭하면 메뉴가 토글 되도록 제작했습니다. 
-                                    또한 우측의 버튼을 하단에 고정되도록 변경됩니다.
-                                </li>
-                            </ul>
+                            <p>
+                                한잔허재로<br>
+                                나의 일상을 되찾자!
+                            </p>
                         </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <a href="https://sdh0718.github.io/indigo/" title="INDIGO 사이트로 이동"  target="_blank">
-                                    <img src="images/mockup-indigo.png" alt="인디고">
-                                </a>
-                                <br>
-                                <p>INDIGO 반응형</p>
-                                <br>
-                                <p>HTML / CSS</p>
+                        <div class="drink drink5">
+                            <div class="img_wrap">
+                                <img class="product" src="images/product_jelly.png" alt="3">
+                                <img class="bak" src="images/pro_bak3.png"></img>
                             </div>
-                            <ul>
-                                <li>원본 홈페이지 : 자체제작</li>
-                                <li>
-                                    PC,태블릿,휴대폰의 여러 브라우저의 해상도에 즉각 반응하도록 제작 되어 있습니다.
-                                </li> 
-                                <li>
-                                    헤더의 이미지는 swiper를 사용해 슬라이드 되도록 제작되었습니다.
-                                </li>
-                                <li>
-                                    Work 섹션의 이미지는 pc에서 4개, 태블릿에서 2개, 모바일에서 1개의 이미지가 보이도록 해상도에 반응하고, 
-                                    각 이미지에 마우스 오버 하면 이미지의 설명과 백그라운드의 색상이 변경됩니다.
-                                </li>
-                                <li>
-                                    모바일 화면으로 전환 시 burger버튼을 누르면 메뉴가 토글 되도록 변경되고, 하단 컨텐츠들이 세로로 배치됩니다.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <a href="https://sdh0718.github.io/selective/"  title="셀렉티브 사이트로 이동" target="_blank">
-                                    <img src="images/mockup-selective.png" alt="셀렉티브">
-                                </a> 
-                                <br>
-                                <p>SELECTIVE</p>
-                                <br>
-                                <p>HTML / JAVASCRIPT & JQUERY / CSS</p>
-                            </div>
-                            <ul>
-                                <li>원본 홈페이지 : <a href="https://selective.naver.com/style">https://selective.naver.com/style</a></li>
-                                <li>
-                                    본 홈페이지는 PC에서 구동되도록 제작되었습니다.
-                                </li> 
-                                <li>
-                                    로그인을 누를 시 로그인 팝업이 작동됩니다. JS로 제작되었고, 로그인 버튼을 누를 시 alert로 아이디와 패스워드 작성 여부, 
-                                    로그인 성공 시 환영 메세지를, 취소 버튼을 누를 시 팝업이 닫히게 구현했습니다.
-                                </li>
-                                <li>
-                                    상단의 아이콘 이미지는 swiper로 만든 슬라이드 되는 이미지입니다.
-                                </li>
-                                <li>
-                                    상단의 로고 바와 하단 중열의 아이콘 바는 CSS로 스크롤이 내려가도 고정되도록 제작되었습니다.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <a href="https://sdh0718.github.io/hansol-responsive/" title="한솔 사이트로 이동" target="_blank">
-                                    <img src="images/mockup-hansol.png" alt="한솔">
-                                </a>
-                                <br>
-                                <p>
-                                    <a href="https://sdh0718.github.io/hansol-no-responsive/"  title="한솔 pc로 이동" target="_blank">
-                                        한솔제지 pc
-                                    </a>
-                                </p>
-                                <p>|</p>
-                                <p>
-                                    <a href="https://sdh0718.github.io/hansol-responsive/" title="한솔 반응형으로 이동" target="_blank">
-                                        한솔제지 반응형
-                                    </a>
-                                </p>
-                                <br>
-                                <p>HTML / CSS</p>
-                            </div>
-                            <ul>
-                                <li>원본 홈페이지 : <a href="https://www.hansolpaper.co.kr/">https://www.hansolpaper.co.kr/</a></li>
-                                <li>
-                                    PC 단일 홈페이지와, PC, 태블릿, 휴대폰으로 브라우저 해상도를 변경 시 반응하도록 제작되었습니다.
-                                </li> 
-                                <li>
-                                    로고, 내비, 헤더, 배너, 노티스, 푸터 섹션으로 제작된 페이지로써 기본에 충실한 사이트를 제작하고자 만들게 된 홈페이지 입니다.
-                                </li>
-                                <li>
-                                    인스타, 페이스북의 아이콘은 font awesome을 사용하여 제작되었습니다.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <a href="https://sdh0718.github.io/kakao/" title="KAKAO 사이트로 이동" target="_blank">
-                                    <img src="images/mockup-kakao.png" alt="카카오">
-                                </a>
-                                <br>
-                                <p>kakaocorp</p>
-                                <br>
-                                <p>HTML / CSS</p>
-                            </div>
-                            <ul>
-                                <li>원본 홈페이지 : <a href="https://www.kakaocorp.com/">https://www.kakaocorp.com/</a></li>
-                                <li>
-                                    본 홈페이지는 PC에서 구동되도록 제작되었습니다.
-                                </li> 
-                                <li>
-                                    최대한 원본과 같게 홈페이지 외관을 구현하였습니다.
-                                </li> 
-                                <li>
-                                    내비에 마우스 오버하면 메뉴를 볼 수 있게 제작하였습니다.
-                                </li> 
-                                <li>
-                                    푸터의 내비에 마우스 오버 할 시 화살표가 변경되도록 가상매체를 넣어 제작해보았습니다.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <a href="https://sdh0718.github.io/line/"  title="라인 사이트로 이동" target="_blank">
-                                    <img src="images/mockup-line.png" alt="라인">
-                                </a> 
-                                <br>
-                                <p>라인</p>
-                                <br>
-                                <p>HTML / CSS</p>
-                            </div>
-                            <ul>
-                                <li>원본 홈페이지 : <a href="https://line.me/ko/">https://line.me/ko/</a></li>
-                                <li>
-                                    본 홈페이지는 PC에서 구동되도록 제작되었습니다.
-                                </li> 
-                                <li>
-                                    최대한 원본과 같게 홈페이지 외관을 구현하였습니다.
-                                </li> 
-                                <li>
-                                    Select 폼으로 언어 선택이 가능합니다.
-                                </li> 
-                                <li> 
-                                    LINE STORE 페이지를 따로 제작했습니다. <br>클릭 하시면
-                                    <a href="https://sdh0718.github.io/line/line_store.html" style="font-size: 1.0em;">line store</a> 
-                                    페이지로 이동합니다.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <a href="https://sdh0718.github.io/hollys/"  title="할리스 사이트로 이동" target="_blank">
-                                    <img src="images/mockup-hollys.png" alt="할리스커피">
-                                </a>
-                                <br>
-                                <p>할리스커피</p>
-                                <br>
-                                <p>HTML / CSS</p>
-                            </div>
-                            <ul>
-                                <li>원본 홈페이지 : <a href="http://www.hollys.co.kr/">http://www.hollys.co.kr/</a></li>
-                                <li>
-                                    본 홈페이지는 PC에서 구동되도록 제작되었습니다.
-                                </li> 
-                                <li>
-                                    최대한 원본과 같게 홈페이지 외관을 구현하였습니다.
-                                </li> 
-                                <li>
-                                    최 상단 좌측 아이콘에 CSS의 백그라운드로 포지션을 바꿔 나타내는 방법으로 사용해보았습니다.
-                                </li>
-                            </ul>
+                            <p>
+                                술자리 걱정없이<br>
+                                한잔허재 준비완료!
+                            </p>
                         </div>
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
+                    <!-- <div class="txt_wrap">
+                        <h2>빠른 숙취해소에는 한잔허재! <br> 음주 전 후 탁월!</h2>
+                        <div class="movie_wrap">
+                            <iframe src="https://www.youtube.com/embed/uTjyaxkkasI" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
 
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
+
+
+            <section id="#3page" class="section drink_sec">
+                <div id="swiper1" class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide slide1">
+
+                            <h2>한잔허재 젤리 파인애플</h2>
+                            <div class="box_wrap">
+
+                                <a class="img_box" href="https://smartstore.naver.com/521global" target="_blank"
+                                    title="한잔허재 사러가기!">
+                                    <img src="images/product_jelly.png" />
+                                    <div class="button_sell">
+                                        <div>
+                                            <i class="fas fa-store"></i>
+                                            <span>구매하기!</span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <div class="txt_box">
+                                    <p> <i class="fas fa-cocktail"></i> 젤리 형태로 쉽게 먹을 수 있도록 만들었습니다.
+                                    </p>
+                                    <p><i class="fas fa-beer"></i> 파인애플 맛으로 맛있게 섭취할 수 있습니다.
+                                    </p>
+                                    <p> <i class="fas fa-glass-cheers"></i> 스틱 형태로 포장되어 있어 휴대가 용이합니다.
+                                    </p>
+                                    <p> <i class="fas fa-wine-bottle"></i> 물 없이 섭취할 수 있어 먹기 쉽습니다.
+                                    </p>
+                                    <div class="tag_wrap">
+                                        <a href="images/product_details1.png" target="_blank">자세히보기</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide slide2">
+                            
+                            <h2>한잔허재 타블렛</h2>
+                            <div class="box_wrap">
+
+                                <a class="img_box" href="https://smartstore.naver.com/521global" target="_blank"
+                                    title="한잔허재 사러가기!">
+                                    <img src="images/product_pill.png" />
+                                    <div class="button_sell">
+                                        <div>
+                                            <i class="fas fa-store"></i>
+                                            <span>구매하기!</span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <div class="txt_box">
+                                    <p> <i class="fas fa-glass-cheers"></i> 목넘김에 부담없는 정제 사이즈로 간편하게 드세요.
+                                    </p>
+                                    <p><i class="fas fa-beer"></i> 물과 함께 삼켜먹는 형태로 맛에 대한 거부감 없이 섭취가능합니다.
+                                    </p>
+                                    <p> <i class="fas fa-cocktail"></i> 파우치 형태로 포장되어 휴대가 용이합니다.
+                                    </p>
+                                    <div class="tag_wrap">
+                                        <a href="images/product_details2.png" target="_blank">자세히보기</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide slide3">
+
+                            <h2>속편허재</h2>
+                            <div class="box_wrap">
+
+                                <a class="img_box" href="https://smartstore.naver.com/521global" target="_blank"
+                                    title="한잔허재 사러가기!">
+                                    <img src="images/product_sok.png" />
+                                    <div class="button_sell">
+                                        <div>
+                                            <i class="fas fa-store"></i>
+                                            <span>구매하기!</span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <div class="txt_box">
+                                    <p><i class="fas fa-beer"></i> 분말형태로 이루어져 있어 물과 함께 드실 수 있습니다.
+                                    </p>
+                                    <p> <i class="fas fa-cocktail"></i> 위장건강에 도움이 되는 프로바이오틱스가 첨가되어 있습니다.
+                                    </p>
+                                    <p> <i class="fas fa-glass-cheers"></i> 아침, 저녁으로 언제 먹어도 괜찮습니다.
+                                    </p>
+                                    <div class="tag_wrap">
+                                        <a href="images/product_details3.png" target="_blank">자세히보기</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide slide4">
+
+                            <h2>한잔허재 스틱형 파인애플</h2>
+                            <div class="box_wrap">
+
+                                <a class="img_box" href="https://smartstore.naver.com/521global" target="_blank"
+                                    title="한잔허재 사러가기!">
+                                    <img src="images/product_jelly.png" />
+                                    <div class="button_sell">
+                                        <div>
+                                            <i class="fas fa-store"></i>
+                                            <span>구매하기!</span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <div class="txt_box">
+                                    <p>
+                                        <i class="fas fa-beer"></i> 액상형으로 쉽게 먹을 수 있도록 만들었습니다.
+                                    </p>
+                                    <p> <i class="fas fa-cocktail"></i> 파인애플 맛으로 맛있게 섭취할 수 있습니다.
+                                    </p>
+                                    <p> <i class="fas fa-glass-cheers"></i> 스틱 형태로 포장되어 있어 휴대가 용이합니다.
+                                    </p>
+                                    <p> <i class="fas fa-wine-bottle"></i> 물 없이 섭취할 수 있어 먹기 쉽습니다.
+                                    </p>
+                                    <div class="tag_wrap">
+                                        <a href="images/product_details1.png" target="_blank">자세히보기</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide slide5">
+            
+                            <h2>한잔허재 환</h2>
+                            <div class="box_wrap">
+
+                                <a class="img_box" href="https://smartstore.naver.com/521global" target="_blank"
+                                    title="한잔허재 사러가기!">
+                                    <img src="images/product_jelly.png" />
+                                    <div class="button_sell">
+                                        <div>
+                                            <i class="fas fa-store"></i>
+                                            <span>구매하기!</span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <div class="txt_box">
+                                    <p><i class="fas fa-beer"></i> 환약 형태로 간편하게 먹을 수 있습니다.
+                                    </p>
+                                    <p> <i class="fas fa-cocktail"></i> 헛개 맛으로 건강함을 느낄 수 있습니다.
+                                    </p>
+                                    <p> <i class="fas fa-glass-cheers"></i> 숙취에 효과적인 특허 성분을 엄선 배합했습니다.
+                                    </p>
+                                    <div class="tag_wrap">
+                                        <a href="images/product_details3.png" target="_blank">자세히보기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+                    </div>
                     <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-            </div>
-        </section>
-        <section class="section" id="tel">
-            <div class="content">
-                <div class="tel_bg">
-                    <h2>저를 소개합니다</h2>
-                    <ul class="tel_bg_ul">
-                        <li class="img_box">
-                        </li>
-                        <li>
-                        </li>
-                    </ul> 
+            </section>
+
+
+
+            <section id="#4page" class="section drink_mov">
+                <div class="tit_wrap">
+                    <h2>한잔허재, 이렇게 만들어졌다?!</h2>
+                    <h3>궁금증이 확 풀리는 다양한 광고를 확인하세요!</h3>
                 </div>
-            </div>
-            <div class="footer">
-                <div class="content footer_address">
-                    <address>Copyright ⓒ SDH0718 2020</address>
+                <div id="swiper2" class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <iframe src="https://www.youtube.com/embed/uTjyaxkkasI" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            </iframe>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe src="https://www.youtube.com/embed/uTjyaxkkasI" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe src="https://www.youtube.com/embed/uTjyaxkkasI" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe src="https://www.youtube.com/embed/uTjyaxkkasI" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe src="https://www.youtube.com/embed/uTjyaxkkasI" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe src="https://www.youtube.com/embed/uTjyaxkkasI" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="content footer_img clearfix">
-                    <p>
-                        <a href="https://github.com/sdh0718" title="나의 포트폴리오로 이동">
-                            <img src="images/ico_github.png" alt="3">
-                        </a>
-                    </p>
-                    <p> 
-                        <a href="https://sdh0718.github.io/portfolio/" target="_blank" title="깃허브로 이동">
-                            <img src="images/ico_pt.png" alt="2">
-                        </a>
-                    </p>
+            </section>
+            <section id="#5page" class="section drink_event">
+                <div class="con_wrap">
+                    <div class="tit_wrap">
+                        <h2>한잔허재 이벤트 소식</h2>
+                        <h3>보면 볼 수록 다양한 이벤트로 한잔허재를 즐겨보세요!</h3>
+                        <div class="txt_wrap1">
+                            <a href="event1.html" target="_blank">
+                                <h4>신제품 이벤트! 술부심 에피소드 풀어보자!</h4>
+                                <p>
+                                    &#34;
+                                    신제품 이벤트 #술부심_친구소환 한잔허재 속~편허재? 술부심에피소드 풀어보자! 사연쓰고 사은품 받아가자!
+                                    &#34;
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="txt_wrap2">
+                            <a href="event2.html" target="_blank">
+                                <h4>신제품 이벤트! 술부심 에피소드 풀어보자!</h4>
+                                <p>
+                                    &#34;
+                                    신제품 이벤트 #술부심_친구소환 한잔허재 속~편허재? 술부심에피소드 풀어보자! 사연쓰고 사은품 받아가자!
+                                    &#34;
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="txt_wrap3">
+                            <a href="event3.html" target="_blank">
+                                <h4>신제품 이벤트! 술부심 에피소드 풀어보자!</h4>
+                                <p>
+                                    &#34;
+                                    신제품 이벤트 #술부심_친구소환 한잔허재 속~편허재? 술부심에피소드 풀어보자! 사연쓰고 사은품 받아가자!
+                                    &#34;
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="event_img">
+                        <img src="images/event1.png">
+                        <img src="images/event2.png">
+                        <img src="images/event3.png">
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <footer id="footer" class="section footer fp-auto-height">
+                <div class="foot_wrap">
+                    <div>
+                        <div class="img"></div>
+                    </div>
+                    <div>
+                        <h2>사업자정보</h2>
+                        <span><strong>상호명</strong> (주)오이일글로벌</span>
+                        <span><strong>대표자</strong> 박준영</span>
+                        <span><strong>고객센터</strong> 010-9719-5006</span>
+                        <span><strong>사업자등록번호</strong> 8898801943</span>
+                        <span><strong>사업장 소재지</strong> 경기도 성남시 분당구 황새울로200번길 36 (분당 동부루트빌딩) 10층 1004호 (우 : 13595)</span>
+                        <span><strong>통신판매업번호</strong> 2021-성남분당에이-0191</span>
+                        <span><strong>e-mail</strong> 521global@521global.com</span>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright 2021. 521global Inc. all rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+
     </div>
-</div>
+
+    <div id="wrap2" class="wrap2">
+
+        <div class="loading">
+            <div class="loader">
+
+            </div>
+        </div>
+
+        <nav class="nav" id="nav">
+            <a href="#sec1" class="logo_nav">한잔허재</a>
+
+            <div id="open_nav_btn" class="open-overlay" onclick>
+                <span class="bar-top"></span>
+                <span class="bar-middle"></span>
+                <span class="bar-bottom"></span>
+            </div>
+            <!-- NAV FULLPAGE POP -->
+            <div class="overlay-navigation">
+                <nav role="navigation">
+                    <div class="open-overlay" onclick>
+                        <span class="bar-top"></span>
+                        <span class="bar-middle"></span>
+                        <span class="bar-bottom"></span>
+                    </div>
+                    <ul>
+                        <li><a href="#sec2">브랜딩허재</a> </li>
+                        <li><a href="#sec3">상품허재</a> </li>
+                        <li><a href="#sec4">영상허재</a> </li>
+                        <li><a href="#sec5">이벤트허재</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+
+        <div class="window_bak"></div>
+
+        <div class="pop_up pop_up_mo">
+            <a href="event1.html" target="_blank">
+                <div class="event_img"></div>
+            </a>
+            <form>
+                <input type="radio" name="notseeMo" id="mo_day3" title="1일간 보지 않기">
+                <label for="mo_day3">1일간 보지 않기</label>
+                <input type="radio" name="notseeMo" id="mo_allday" title="다시 보지 않기">
+                <label for="mo_allday">다시 보지 않기</label>
+                <i id="MoClosebtn" class="fas fa-window-close closebtn" title="닫기"></i>
+            </form>
+        </div>
+
+        <header id="sec1" class="header">
+            <div class="bak"></div>
+            <div class="head_sec">
+                <div class="head_txt">
+                    <div class="logo"></div>
+                    <p>시원하게 한잔하고, 시원하게 풀자!</p>
+                    <div class="button_sell">
+                        <a href="https://smartstore.naver.com/521global" target="_blank" title="한잔허재 사러가기!">
+                            <i class="fas fa-store"></i>
+                            <span>스토어 바로가기</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="model2">
+                    <div class="model_img model1"></div>
+                    <div class="model_img model2"></div>
+                    <div class="model_img model3"></div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <section id="sec2" class="drink_guide">
+            <div class="sec_wrap">
+                <h2> <span class="neon">빠른 숙취해소 ?</span> <span class="flux">이제는 한잔허재 !</span> </h2>
+
+
+                
+
+                <div class="mo_drink_wrap">
+                    <div class="mo_drink mo_drink1">
+                        <div class="mo_img_wrap">
+                            <img class="product" src="images/product_jelly.png" alt="1">
+                            <img class="bak" src="images/pro_bak1.png"></img>
+                        </div>
+                        <p>
+                            마시기 전에<br>
+                            미리 준비하자!
+                        </p>
+                    </div>
+                    <div class="mo_drink mo_drink2">
+                        <div class="mo_img_wrap">
+                            <img class="product" src="images/product_pill.png" alt="2">
+                            <img class="bak" src="images/pro_bak2.png"></img>
+                        </div>
+                        <p>
+                            마시고 난 후<br>
+                            빠른 숙취해소!
+                        </p>
+                    </div>
+                    <div class="mo_drink mo_drink3">
+                        <div class="mo_img_wrap">
+                            <img class="product" src="images/product_sok.png" alt="3">
+                            <img class="bak" src="images/pro_bak5.png"></img>
+                        </div>
+                        <p>
+                            건강한 내 몸을 위한<br>
+                            속편허재!
+                        </p>
+                    </div>
+                    <div class="mo_drink mo_drink4">
+                        <div class="mo_img_wrap">
+                            <img class="product" src="images/product_jelly.png" alt="3">
+                            <img class="bak" src="images/pro_bak4.png"></img>
+                        </div>
+                        <p>
+                            위장건강도 챙기고<br>
+                            나의 일상을 되찾자!
+                        </p>
+                    </div>
+                    <div class="mo_drink mo_drink5">
+                        <div class="mo_img_wrap">
+                            <img class="product" src="images/product_jelly.png" alt="3">
+                            <img class="bak" src="images/pro_bak3.png"></img>
+                        </div>
+                        <p>
+                            술자리 걱정없이<br>
+                            한잔허재로 준비완료!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section id="sec3" class="drink_sec">
+
+            <div class="pro pro1">
+                <h2>한잔허재 젤리 파인애플</h2>
+                <div class="box_wrap">
+
+                    <div class="img_box">
+                        <img src="images/product_jelly.png" />
+                        <a class="button_sell" href="https://smartstore.naver.com/521global" target="_blank"
+                            title="한잔허재 사러가기!">
+                            <div>
+                                <i class="fas fa-store"></i>
+                                <span>구매하기!</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="txt_box">
+                        <p> <i class="fas fa-cocktail"></i> 젤리 형태로 쉽게 먹을 수 있도록 만들었습니다.
+                        </p>
+                        <p><i class="fas fa-beer"></i> 파인애플 맛으로 맛있게 섭취할 수 있습니다.
+                        </p>
+                        <p> <i class="fas fa-glass-cheers"></i> 스틱 형태로 포장되어 있어 휴대가 용이합니다.
+                        </p>
+                        <p> <i class="fas fa-wine-bottle"></i> 물 없이 섭취할 수 있어 먹기 쉽습니다.
+                        </p>
+                        <div class="tag_wrap">
+                            <a href="images/product_details1.png" target="_blank">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro pro2">
+                <h2>한잔허재 타블렛</h2>
+                <div class="box_wrap">
+
+                    <div class="img_box">
+                        <img src="images/product_pill.png" />
+                        <a class="button_sell" href="https://smartstore.naver.com/521global" target="_blank"
+                            title="한잔허재 사러가기!">
+                            <div>
+                                <i class="fas fa-store"></i>
+                                <span>구매하기!</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="txt_box">
+                        <p> <i class="fas fa-glass-cheers"></i> 목넘김에 부담없는 정제 사이즈로 간편하게 드세요.
+                        </p>
+                        <p><i class="fas fa-beer"></i> 물과 함께 삼켜먹는 형태로 맛에 대한 거부감 없이 섭취가능합니다.
+                        </p>
+                        <p> <i class="fas fa-cocktail"></i> 파우치 형태로 포장되어 휴대가 용이합니다.
+                        </p>
+                        <div class="tag_wrap">
+                            <a href="images/product_details2.png" target="_blank">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro pro3">
+                <h2>속편허재</h2>
+                <div class="box_wrap">
+
+                    <div class="img_box">
+                        <img src="images/product_sok.png" />
+                        <a class="button_sell" href="https://smartstore.naver.com/521global" target="_blank"
+                            title="한잔허재 사러가기!">
+                            <div>
+                                <i class="fas fa-store"></i>
+                                <span>구매하기!</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="txt_box">
+                        <p><i class="fas fa-beer"></i> 분말형태로 이루어져 있어 물과 함께 드실 수 있습니다.
+                        </p>
+                        <p> <i class="fas fa-cocktail"></i> 위장건강에 도움이 되는 프로바이오틱스가 첨가되어 있습니다.
+                        </p>
+                        <p> <i class="fas fa-glass-cheers"></i> 아침, 저녁으로 언제 먹어도 괜찮습니다.
+                        </p>
+                        <div class="tag_wrap">
+                            <a href="images/product_details3.png" target="_blank">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro pro4">
+                <h2>한잔허재 스틱형 파인애플</h2>
+                <div class="box_wrap">
+
+                    <div class="img_box">
+                        <img src="images/product_jelly.png" />
+                        <a class="button_sell" href="https://smartstore.naver.com/521global" target="_blank"
+                            title="한잔허재 사러가기!">
+                            <div>
+                                <i class="fas fa-store"></i>
+                                <span>구매하기!</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="txt_box">
+                        <p>
+                            <i class="fas fa-beer"></i> 액상형으로 쉽게 먹을 수 있도록 만들었습니다.
+                        </p>
+                        <p> <i class="fas fa-cocktail"></i> 파인애플 맛으로 맛있게 섭취할 수 있습니다.
+                        </p>
+                        <p> <i class="fas fa-glass-cheers"></i> 스틱 형태로 포장되어 있어 휴대가 용이합니다.
+                        </p>
+                        <p> <i class="fas fa-wine-bottle"></i> 물 없이 섭취할 수 있어 먹기 쉽습니다.
+                        </p>
+                        <div class="tag_wrap">
+                            <a href="images/product_details1.png" target="_blank">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro pro5">
+                <h2>한잔허재 환</h2>
+                <div class="box_wrap">
+
+                    <div class="img_box">
+                        <img src="images/product_jelly.png" />
+                        <a class="button_sell" href="https://smartstore.naver.com/521global" target="_blank"
+                            title="한잔허재 사러가기!">
+                            <div>
+                                <i class="fas fa-store"></i>
+                                <span>구매하기!</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="txt_box">
+                        <p><i class="fas fa-beer"></i> 환약 형태로 간편하게 먹을 수 있습니다.
+                        </p>
+                        <p> <i class="fas fa-cocktail"></i> 헛개 맛으로 건강함을 느낄 수 있습니다.
+                        </p>
+                        <p> <i class="fas fa-glass-cheers"></i> 숙취에 효과적인 특허 성분을 엄선 배합했습니다.
+                        </p>
+                        <div class="tag_wrap">
+                            <a href="images/product_details3.png" target="_blank">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+
+        <section id="sec4" class="drink_mov">
+            <div class="tit_wrap">
+                <h2>한잔허재, <strong></strong> 이렇게 만들어졌다?!</h2>
+                <h3>궁금증이 확 풀리는 다양한 광고를 확인하세요!</h3>
+            </div>
+
+
+
+            <div class="video_wrap">
+                <div class="vid video1">
+                    <iframe src="https://www.youtube.com/embed/uTjyaxkkasI" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="vid video2">
+                    <iframe src="https://www.youtube.com/embed/uTjyaxkkasI" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="vid video3">
+                    <iframe src="https://www.youtube.com/embed/uTjyaxkkasI" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="vid video4">
+                    <iframe src="https://www.youtube.com/embed/uTjyaxkkasI" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="vid video5">
+                    <iframe src="https://www.youtube.com/embed/uTjyaxkkasI" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="vid video6">
+                    <iframe src="https://www.youtube.com/embed/uTjyaxkkasI" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="sec5" class="drink_event">
+            <div class="con_wrap">
+
+                <div class="tit_wrap">
+                    <h2>한잔허재 이벤트 소식</h2>
+                    <h3>보면 볼 수록 다양한 이벤트로 한잔허재를 즐겨보세요!</h3>
+                </div>
+
+                <div class="txt_wrap txt_wrap1">
+                    <a href="event1.html" target="_blank">
+                        <img src="images/event1.png">
+                        <h4>신제품 이벤트! 술부심 에피소드 풀어보자!</h4>
+                        <p>
+                            &#34;
+                            신제품 이벤트 #술부심_친구소환 한잔허재 속~편허재? 술부심에피소드 풀어보자! 사연쓰고 사은품 받아가자!
+                            &#34;
+                        </p>
+                    </a>
+                </div>
+
+                <div class="txt_wrap txt_wrap2">
+                    <a href="event2.html" target="_blank">
+                        <img src="images/event2.png">
+                        <h4>신제품 이벤트! 술부심 에피소드 풀어보자!</h4>
+                        <p>
+                            &#34;
+                            신제품 이벤트 #술부심_친구소환 한잔허재 속~편허재? 술부심에피소드 풀어보자! 사연쓰고 사은품 받아가자!
+                            &#34;
+                        </p>
+                    </a>
+                </div>
+
+                <div class="txt_wrap txt_wrap3">
+                    <a href="event3.html" target="_blank">
+                        <img src="images/event3.png">
+                        <h4>신제품 이벤트! 술부심 에피소드 풀어보자!</h4>
+                        <p>
+                            &#34;
+                            신제품 이벤트 #술부심_친구소환 한잔허재 속~편허재? 술부심에피소드 풀어보자! 사연쓰고 사은품 받아가자!
+                            &#34;
+                        </p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <footer id="footer" class="footer">
+            <div class="foot_wrap">
+                <div>
+                    <div class="img"></div>
+                </div>
+                <div>
+                    <h2>사업자정보</h2>
+                    <span><strong>상호명</strong> (주)오이일글로벌</span>
+                    <span><strong>대표자</strong> 박준영</span>
+                    <span><strong>고객센터</strong> 010-9719-5006</span>
+                    <span><strong>사업자등록번호</strong> 8898801943</span>
+                    <span><strong>사업장 소재지</strong> 경기도 성남시 분당구 황새울로200번길 36 (분당 동부루트빌딩) 10층 1004호 (우 : 13595)</span>
+                    <span><strong>통신판매업번호</strong> 2021-성남분당에이-0191</span>
+                    <span><strong>e-mail</strong> 521global@521global.com</span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2021. 521global Inc. all rights reserved.</p>
+            </div>
+        </footer>
+
+
+    </div>
+
 
 </body>
+
+
+
+
+<!-- js -->
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<!--fullpage-->
+<script src="js/jquery.fullPage.js"></script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- animate -->
+<script src="js/wow.min.js"></script>
+<!-- cookie -->
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+
+<!-- 스크립트 -->
+<script src="js/index.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/pop_up_cookie.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+
+        // $(function () {
+        //     createFullPage();
+        // });
+
+        // function createFullPage() {
+        //     if ($(window).width() > 900) {
+        //         $("#fullpage").fullpage();
+        //     }
+        // }
+
+        // $(window).resize(function (e) {
+        //     if ($(window).width() > 900) {
+        //         createFullPage();
+        //     } else {
+        //         $.fn.fullpage.destroy("all");
+        //     }
+        // });
+
+        $("#fullpage").fullpage({
+            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+            menu: '#menu',
+            anchors: ['1page', '2page', '3page', '4page'],
+            responsiveWidth: 900,
+        });
+
+
+    });
+
+    new WOW().init();
+
+    $(window).on('load', function () {
+        $(".loading").fadeOut(100);
+    });
+
+</script>
+
+
 </html>
