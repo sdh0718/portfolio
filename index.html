@@ -49,7 +49,14 @@
     <meta content='@username' name='twitter:site' />
     <meta content='@username' name='twitter:creator' />
     <style id='page-skin-1' type='text/css'>
-        <!--
+        @font-face {
+            font-family: 'Y_Spotlight';
+            src:
+                url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         html,
         body,
         .section,
@@ -255,8 +262,8 @@
         h4,
         h5,
         h6 {
-            font-family: 'Montserrat'
-                font-weight: 400;
+            font-family: 'Montserrat';
+            font-weight: 400;
             color: #151515;
         }
 
@@ -4189,7 +4196,8 @@ http://flickity.metafizzy.co
                     position: relative;
                 }
             }
-        -->
+
+            -->
     </style>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900');
@@ -6518,8 +6526,8 @@ http://flickity.metafizzy.co
                         <div class='logo-text section' id='Header Title' name='Header Title Widget'>
                             <div class='widget HTML' data-version='1' id='HTML30'>
                                 <div class='widget-content'>
-                                    <p>
-                                        Welcome to the My portfolio world!
+                                    <p style="font-family: 'Y_Spotlight'; text-transform: none;">
+                                        Web Developer를 꿈꾸는 새내기 웹 퍼블리셔,
                                     </p>
                                 </div>
                                 <div class='clear'></div>
@@ -6551,7 +6559,7 @@ http://flickity.metafizzy.co
                                         $(function () {
                                             "use strict";
                                             $(".header-logo-desc p").typed({
-                                                strings: [" WEB PUBLISHER.", " UI-UX DESINER."], //Headlines(Change It)
+                                                strings: [" WEB PUBLISHER.", " UI-UX DESINER.", " PRONT-END.", " WEB DEVELOPER"], //Headlines(Change It)
                                                 loop: true,
                                                 startDelay: 1e3,
                                                 backDelay: 2e3
@@ -6604,8 +6612,8 @@ http://flickity.metafizzy.co
                         <dd class='skill-percent scss' data-percent='80'></dd>
                         <dt>PHOTOSHOP : 100%</dt>
                         <dd class='skill-percent php' data-percent='100'></dd>
-                        <dt>ILLUSTRATOR : 90%</dt>
-                        <dd class='skill-percent javascript' data-percent='90'></dd>
+                        <dt>FIGMA : 70%</dt>
+                        <dd class='skill-percent javascript' data-percent='70'></dd>
                     </dl>
                     <!-- #skill -->
                 </div>
@@ -6670,7 +6678,7 @@ http://flickity.metafizzy.co
                         </li>
                     </span>
                     <h6 class='works-heading'>1. 시안 디자인(Design)</h6>
-                    <p class='works-text'> 처음으로, 포토샵과 일러스트레이터 외 기타여 프로그램을 이용하여 시안 디자인을 작성합니다.</p>
+                    <p class='works-text'> 처음으로, 포토샵과 FIGMA 외 기타여 프로그램을 이용하여 시안 디자인을 작성합니다.</p>
                 </div>
                 <!-- First One Ends -->
                 <!-- Second -->
@@ -6680,8 +6688,7 @@ http://flickity.metafizzy.co
                                     class='fa fa-clipboard'></i></span></li>
                     </span>
                     <h6 class='works-heading'>2. 코딩(Coding)</h6>
-                    <p class='works-text'> html을 작성하기 위해 vscode(비쥬얼 스튜디오 코드)를 사용하여 코딩을 시작하거나, 혹은 BOOTSTRAP을 이용해 홈페이지를
-                        작성합니다.</p>
+                    <p class='works-text'> html을 작성하기 위해 vscode(비쥬얼 스튜디오 코드)를 사용하여 작업을 시작합니다. css와 js를 사용합니다.</p>
                 </div>
                 <!-- Second Ends -->
                 <!-- Third -->
@@ -6701,7 +6708,7 @@ http://flickity.metafizzy.co
                         </li>
                     </span>
                     <h6 class='works-heading'>4. 완성(Complete)</h6>
-                    <p class='works-text'>완성된 홈페이지를 웹 도메인에 연결하여 최종적으로 완성합니다. 이 후 디버깅이나 컨펌이 있다면 수정 작업을 합니다.</p>
+                    <p class='works-text'>완성된 홈페이지를 웹 도메인에 연결하여 최종적으로 완성합니다. 이후 요청사항이 있으면 수정 작업을 합니다.</p>
                 </div>
                 <!-- Fourth Ends -->
             </div>
@@ -6711,14 +6718,14 @@ http://flickity.metafizzy.co
             <div class='row counter-box-wrap'>
                 <div class='counter-box-item'>
                     <i class='color lnr lnr-code'></i>
-                    <h1 class='counter-sora'>21</h1>
+                    <h1 class='counter-sora'>8</h1>
                     <div class='counter-sora-text'
                         style='font-size: 40px;color: #A7D175; padding-bottom: 20px;font-weight: bolder;'>My Work tool
                     </div>
                     <div class='counter-sora-text'
                         style='font-family: &#39;Noto Sans KR&#39;, sans-serif; text-shadow: 3px 3px 5px black;'>
-                        비쥬얼 스튜디오 코드(VScode), 포토샵, 일러스트레이터, figma, Github, Cdnjs, 파워포인트, 엑셀 || 공부 중인 것 : 부트스트랩, 윅스, 워드
-                        프레스, 카페24, REACT.js, VUE.js
+                        비쥬얼 스튜디오 코드(VScode), 포토샵, 일러스트레이터, figma, Github, Cdnjs, 파워포인트, 엑셀 || <br />
+                        공부 중인 것 : 부트스트랩, 윅스, 워드프레스, 카페24, REACT.js, VUE.js
 
                         <!-- vscode(비쥬얼 스튜디오 코드),Photoshop(포토샵), Illustrator(일러스트레이터), Github(깃허브), Swiper API(스와이퍼 api), Bx slider(bx 슬라이더), Font awsome(폰트 어썸), Smooth Scrollbar(스무스 스크롤바), CSS Compression(CSS 압축하기), Cdnjs(외부링크 웹), Pixabay(픽사베이), Zeplin(제플린), GoogleBlog(구글블로그), Wix(윅스), Wordpress(워드프레스), CAFE24(카페24), PowerPoint(파워포인트), EXCEL(엑셀) || Bigginer : xml, ajax, GNUboard5 -->
                     </div>
